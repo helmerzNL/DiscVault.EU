@@ -444,88 +444,107 @@
           </article>
         </div>
 
-        <!-- Versioned features: changelog layout -->
+        <!-- Feature list -->
         <div class="feature-releases">
-          <div class="release-group">
-            <p class="release-tag">v2.1</p>
-            <div class="cards release-cards">
+          <div class="cards cards-3">
+            <article class="card">
+              <h3 data-i18n="f7.title">User management</h3>
+              <p data-i18n="f7.body">Add multiple users with their own accounts and permissions to share your DiscVault instance.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f8.title">Groups</h3>
+              <p data-i18n="f8.body">Organize your collection into custom groups and let multiple users collaborate on shared lists.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f9.title">Passkey recovery</h3>
+              <p data-i18n="f9.body">Securely recover your account using passkeys — no passwords or emails required.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f10.title">MemberGroups</h3>
+              <p data-i18n="f10.body">Any user can create their own group and invite others by username. Invited users receive a notification and can choose to join or decline. Separate from admin-managed groups — fully user-driven collaboration.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f11.title">Watchlist &amp; watch history</h3>
+              <p data-i18n="f11.body">Mark titles as watched, track when you last viewed them, and keep a personal watchlist for discs you want to get to next.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f12.title">Multiple languages</h3>
+              <p data-i18n="f12.body">DiscVault is now available in French, German, and Spanish — with more languages on the way.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f13.title">Invite-only registration</h3>
+              <p data-i18n="f13.body">Disable open registration and require admin-issued invites. New users receive a one-time password to register their passkey — no sign-up form needed.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f14.title">Push notifications</h3>
+              <p data-i18n="f14.body">Group members receive a push notification on their device whenever a new disc is added to a shared group — works on any device with DiscVault installed as a PWA.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f15.title">User-scoped MCP access</h3>
+              <p data-i18n="f15.body">Generate a personal API key in your profile and use it to connect your AI assistant to your own collection, watchlist, and watch history — without ever exposing data from other users.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="s_edition.title">Edition &amp; version tracking</h3>
+              <p data-i18n="s_edition.body">Record which edition of a disc you own — Steelbook, Director's Cut, Limited Edition, or standard release. Essential for collectors who own multiple versions of the same title.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="s_plex.title">Compare with Plex / Jellyfin</h3>
+              <p data-i18n="s_plex.body">See which physical discs you also have digitally in Plex or Jellyfin — and which titles you only own physically but haven't ripped yet.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f16.title">MovieVault metadata enrichment</h3>
+              <p data-i18n="f16.body">Opt in to enrich releases and box sets with community-sourced metadata. Corrections you add are contributed back to MovieVault, while existing DiscVault workflows stay unchanged.</p>
+            </article>
+          </div>
+
+          <!-- Now in beta (v26.3) -->
+          <div class="feature-category">
+            <h4 class="category-label" data-i18n="beta263.tag">Now in beta · v26.3</h4>
+            <div class="cards cards-3">
               <article class="card">
-                <span class="badge badge-new" data-i18n="f7.badge">New in 2.1</span>
-                <h3 data-i18n="f7.title">User management</h3>
-                <p data-i18n="f7.body">Add multiple users with their own accounts and permissions to share your DiscVault instance.</p>
+                <span class="badge badge-beta" data-i18n="beta263.badge">New in 26.3 · Beta</span>
+                <h3 data-i18n="s2.title">Collection statistics</h3>
+                <p data-i18n="s2.body">Get a dashboard overview of your collection — disc count by format, genre breakdown, total runtime, and growth over time.</p>
               </article>
               <article class="card">
-                <span class="badge badge-new" data-i18n="f8.badge">New in 2.1</span>
-                <h3 data-i18n="f8.title">Groups</h3>
-                <p data-i18n="f8.body">Organize your collection into custom groups and let multiple users collaborate on shared lists.</p>
+                <span class="badge badge-beta" data-i18n="beta263.badge">New in 26.3 · Beta</span>
+                <h3 data-i18n="s3.title">Custom tags &amp; lists</h3>
+                <p data-i18n="s3.body">Add freeform tags to any title — &ldquo;lent out&rdquo;, &ldquo;wishlist&rdquo;, &ldquo;gift&rdquo; — and build personal lists that go beyond automatic groups.</p>
               </article>
               <article class="card">
-                <span class="badge badge-new" data-i18n="f9.badge">New in 2.1</span>
-                <h3 data-i18n="f9.title">Passkey recovery</h3>
-                <p data-i18n="f9.body">Securely recover your account using passkeys — no passwords or emails required.</p>
+                <span class="badge badge-beta" data-i18n="beta263.badge">New in 26.3 · Beta</span>
+                <h3 data-i18n="s6.title">Wishlist</h3>
+                <p data-i18n="s6.body">Keep track of discs you want to add to your collection — special editions you're hunting for, or titles you've ordered but haven't received yet. Move them to your collection with one tap once they arrive.</p>
+              </article>
+              <article class="card">
+                <span class="badge badge-beta" data-i18n="beta263.badge">New in 26.3 · Beta</span>
+                <h3 data-i18n="s4.title">Loan tracker</h3>
+                <p data-i18n="s4.body">Track which discs you've lent out and to whom. See all outstanding loans at a glance and add a return reminder so nothing goes missing.</p>
               </article>
             </div>
           </div>
-          <div class="release-group">
-            <p class="release-tag">v2.5</p>
-            <div class="cards release-cards">
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f10.badge">New in 2.5</span>
-                <h3 data-i18n="f10.title">MemberGroups</h3>
-                <p data-i18n="f10.body">Any user can create their own group and invite others by username. Invited users receive a notification and can choose to join or decline. Separate from admin-managed groups — fully user-driven collaboration.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f11.badge">New in 2.5</span>
-                <h3 data-i18n="f11.title">Watchlist &amp; watch history</h3>
-                <p data-i18n="f11.body">Mark titles as watched, track when you last viewed them, and keep a personal watchlist for discs you want to get to next.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f12.badge">New in 2.5</span>
-                <h3 data-i18n="f12.title">Multiple languages</h3>
-                <p data-i18n="f12.body">DiscVault is now available in French, German, and Spanish — with more languages on the way.</p>
-              </article>
-            </div>
-          </div>
-          <div class="release-group">
-            <p class="release-tag">v2.5.1 – v2.5.3</p>
-            <div class="cards release-cards">
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f13.badge">New in 2.5.1</span>
-                <h3 data-i18n="f13.title">Invite-only registration</h3>
-                <p data-i18n="f13.body">Disable open registration and require admin-issued invites. New users receive a one-time password to register their passkey — no sign-up form needed.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f14.badge">New in 2.5.2</span>
-                <h3 data-i18n="f14.title">Push notifications</h3>
-                <p data-i18n="f14.body">Group members receive a push notification on their device whenever a new disc is added to a shared group — works on any device with DiscVault installed as a PWA.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f15.badge">New in 2.5.3</span>
-                <h3 data-i18n="f15.title">User-scoped MCP access</h3>
-                <p data-i18n="f15.body">Generate a personal API key in your profile and use it to connect your AI assistant to your own collection, watchlist, and watch history — without ever exposing data from other users.</p>
-              </article>
-            </div>
-          </div>
-          <div class="release-group">
-            <p class="release-tag">v3.0.0</p>
-            <div class="cards release-cards">
-              <article class="card">
-                <span class="badge badge-new" data-i18n="s_edition.badge">New in 3.0.0</span>
-                <h3 data-i18n="s_edition.title">Edition &amp; version tracking</h3>
-                <p data-i18n="s_edition.body">Record which edition of a disc you own — Steelbook, Director's Cut, Limited Edition, or standard release. Essential for collectors who own multiple versions of the same title.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="s_plex.badge">New in 3.0.0</span>
-                <h3 data-i18n="s_plex.title">Compare with Plex / Jellyfin</h3>
-                <p data-i18n="s_plex.body">See which physical discs you also have digitally in Plex or Jellyfin — and which titles you only own physically but haven't ripped yet.</p>
-              </article>
-              <article class="card">
-                <span class="badge badge-new" data-i18n="f16.badge">New in 3.0.0 beta</span>
-                <h3 data-i18n="f16.title">MovieVault metadata enrichment</h3>
-                <p data-i18n="f16.body">Opt in to enrich releases and box sets with community-sourced metadata. Corrections you add are contributed back to MovieVault, while existing DiscVault workflows stay unchanged.</p>
-              </article>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      <section id="ios" class="wrap section ios-highlight">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="ios.eyebrow">Coming soon · iOS</p>
+          <h2 data-i18n="ios.h2">A native DiscVault app for iPhone and iPad — beta soon on TestFlight.</h2>
+        </div>
+        <div class="cards cards-3">
+          <article class="card">
+            <span class="badge badge-beta" data-i18n="ios.badge">TestFlight beta soon</span>
+            <h3 data-i18n="ios.native.title">Built natively for iOS</h3>
+            <p data-i18n="ios.native.body">A native iPhone and iPad app is on the way. A public beta is coming soon through TestFlight — more info to follow.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="ios.standalone.title">Works standalone</h3>
+            <p data-i18n="ios.standalone.body">The app runs completely on its own — no server required. Manage your collection right on your device without the DiscVault backend.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="ios.connect.title">Or connect to your backend</h3>
+            <p data-i18n="ios.connect.body">Already self-hosting? Connect the native app to your own self-hosted DiscVault 26 backend to keep everything in sync.</p>
+          </article>
         </div>
       </section>
 
@@ -546,31 +565,38 @@
               </p>
             </article>
             <article class="card card-upcoming">
-              <span class="badge badge-soon" data-i18n="s2.badge">Planned for 26</span>
-              <h3 data-i18n="s2.title">Collection statistics</h3>
-              <p data-i18n="s2.body">
-                Get a dashboard overview of your collection — disc count by format, genre breakdown, total runtime, and growth over time.
-              </p>
-            </article>
-            <article class="card card-upcoming">
-              <span class="badge badge-soon" data-i18n="s3.badge">Planned for 26</span>
-              <h3 data-i18n="s3.title">Custom tags &amp; lists</h3>
-              <p data-i18n="s3.body">
-                Add freeform tags to any title — &ldquo;lent out&rdquo;, &ldquo;wishlist&rdquo;, &ldquo;gift&rdquo; — and build personal lists that go beyond automatic groups.
-              </p>
-            </article>
-            <article class="card card-upcoming">
-              <span class="badge badge-soon" data-i18n="s6.badge">Planned for 26</span>
-              <h3 data-i18n="s6.title">Wishlist</h3>
-              <p data-i18n="s6.body">
-                Keep track of discs you want to add to your collection — special editions you're hunting for, or titles you've ordered but haven't received yet. Move them to your collection with one tap once they arrive.
-              </p>
-            </article>
-            <article class="card card-upcoming">
               <span class="badge badge-soon" data-i18n="s_region.badge">Planned for 26</span>
               <h3 data-i18n="s_region.title">Region indicator</h3>
               <p data-i18n="s_region.body">
                 Log the region of any disc — A/B/C for Blu-ray, regions 1–6 for DVD. Useful for import collectors and anyone with multiple players.
+              </p>
+            </article>
+            <article class="card card-upcoming">
+              <span class="badge badge-soon" data-i18n="s_location.badge">Planned for 26</span>
+              <h3 data-i18n="s_location.title">Shelf &amp; location tracking</h3>
+              <p data-i18n="s_location.body">
+                Record where each disc physically lives — shelf, box, or room. Never dig through the whole collection again when you know exactly where a title is stored.
+              </p>
+            </article>
+            <article class="card card-upcoming">
+              <span class="badge badge-soon" data-i18n="s_condition.badge">Planned for 26</span>
+              <h3 data-i18n="s_condition.title">Condition &amp; sealed status</h3>
+              <p data-i18n="s_condition.body">
+                Note the condition of the case and disc, and flag titles that are still sealed. Handy for collectors who keep mint copies separate from their watch copies.
+              </p>
+            </article>
+            <article class="card card-upcoming">
+              <span class="badge badge-soon" data-i18n="s_value.badge">Planned for 26</span>
+              <h3 data-i18n="s_value.title">Collection value</h3>
+              <p data-i18n="s_value.body">
+                Record what you paid and an estimated current value per title, and see the total worth of your collection at a glance — useful for insurance and tracking rare editions.
+              </p>
+            </article>
+            <article class="card card-upcoming">
+              <span class="badge badge-soon" data-i18n="s_dupes.badge">Planned for 26</span>
+              <h3 data-i18n="s_dupes.title">Duplicate detection</h3>
+              <p data-i18n="s_dupes.body">
+                Get a heads-up when you scan or add a disc you already own, so you avoid accidental double-buys — with an override for collectors who deliberately keep multiple copies.
               </p>
             </article>
           </div>
@@ -598,19 +624,6 @@
               <h3 data-i18n="s_sort.title">Sort by IMDb / TMDb score</h3>
               <p data-i18n="s_sort.body">
                 The metadata is already there — use it. Sort your collection by rating to instantly surface the best titles on your shelf.
-              </p>
-            </article>
-          </div>
-        </div>
-
-        <div class="feature-category">
-          <h4 class="category-label" data-i18n="cat3">Loan &amp; wishlist management</h4>
-          <div class="coming-soon-grid">
-            <article class="card card-upcoming">
-              <span class="badge badge-soon" data-i18n="s4.badge">Planned for 26</span>
-              <h3 data-i18n="s4.title">Loan tracker</h3>
-              <p data-i18n="s4.body">
-                Track which discs you've lent out and to whom. See all outstanding loans at a glance and add a return reminder so nothing goes missing.
               </p>
             </article>
           </div>
@@ -709,7 +722,7 @@
       <a href="https://github.com/helmerzNL/DiscVault" target="_blank" rel="noreferrer" data-i18n="footer.github">Source on GitHub</a>
     </footer>
 
-    <script src="./translations.js?v=12"></script>
+    <script src="./translations.js?v=13"></script>
     <script src="./translations-extra.js?v=4"></script>
     <script>
 
