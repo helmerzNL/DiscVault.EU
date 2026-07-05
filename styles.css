@@ -1474,3 +1474,31 @@ code {
   color: var(--accent2);
   text-decoration: none;
 }
+
+.legal-langswitch {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+  font-size: 0.85rem;
+}
+
+.legal-langswitch a {
+  color: var(--accent2);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+
+.legal-langswitch a:hover {
+  border-color: var(--accent-border);
+}
+
+.legal-langswitch span[aria-current="true"] {
+  color: var(--text);
+  border: 1px solid var(--accent-border);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
