@@ -823,3 +823,274 @@
     });
   });
 })();
+
+/* Supplementary translations: v26.3 beta group, new planned features and the native iOS app section. */
+(function () {
+  var plannedBadge = {
+    fr: "Prevu pour 26", de: "Geplant für 26", es: "Previsto para 26", pt: "Previsto para 26",
+    it: "Previsto per 26", sv: "Planerat for 26", no: "Planlagt for 26", fi: "Suunniteltu 26:een",
+    da: "Planlagt til 26", ja: "26 で予定", zh: "计划在 26 中提供", ko: "26 예정",
+    uk: "Заплановано для 26", pl: "Planowane dla 26", el: "Προγραμματισμένο για 26",
+    hu: "26-hoz tervezve", cs: "Plánováno pro 26", tr: "26 için planlandı"
+  };
+  var L = {
+    fr: {
+      "beta263.tag": "Maintenant en bêta · v26.3", "beta263.badge": "Nouveau en 26.3 · Bêta",
+      "ios.eyebrow": "Bientôt · iOS", "ios.h2": "Une app DiscVault native pour iPhone et iPad — bientôt en bêta sur TestFlight.", "ios.badge": "Bêta TestFlight bientôt",
+      "ios.native.title": "Conçue nativement pour iOS", "ios.native.body": "Une app native pour iPhone et iPad arrive. Une bêta publique sera bientôt disponible via TestFlight — plus d'infos à venir.",
+      "ios.standalone.title": "Fonctionne de façon autonome", "ios.standalone.body": "L'app fonctionne entièrement seule — aucun serveur requis. Gérez votre collection directement sur votre appareil, sans le backend DiscVault.",
+      "ios.connect.title": "Ou connectez-la à votre backend", "ios.connect.body": "Vous hébergez déjà vous-même ? Connectez l'app native à votre propre backend DiscVault 26 auto-hébergé pour tout garder synchronisé.",
+      "s_location.title": "Suivi d'étagère &amp; d'emplacement", "s_location.body": "Notez où chaque disque se trouve physiquement — étagère, boîte ou pièce. Ne fouillez plus toute la collection quand vous savez exactement où un titre est rangé.",
+      "s_condition.title": "État &amp; statut scellé", "s_condition.body": "Notez l'état du boîtier et du disque, et marquez les titres encore scellés. Pratique pour les collectionneurs qui séparent les exemplaires neufs de leurs copies de visionnage.",
+      "s_value.title": "Valeur de la collection", "s_value.body": "Enregistrez le prix payé et une valeur actuelle estimée par titre, et voyez la valeur totale de votre collection d'un coup d'œil — utile pour l'assurance et le suivi des éditions rares.",
+      "s_dupes.title": "Détection des doublons", "s_dupes.body": "Soyez prévenu lorsque vous scannez ou ajoutez un disque que vous possédez déjà, pour éviter les achats en double — avec une exception pour ceux qui gardent volontairement plusieurs exemplaires.",
+      "s_labels.title": "Impression d'étiquettes d'étagère", "s_labels.body": "Générez des étiquettes QR ou code-barres imprimables pour vos étagères et boîtes, afin de scanner directement au bon endroit et retrouver n'importe quel titre en quelques secondes.",
+      "s_pricealert.title": "Alertes prix &amp; bons plans", "s_pricealert.body": "Recevez une notification quand un disque de votre liste de souhaits baisse de prix ou est en promotion, pour ne jamais manquer une bonne affaire sur les éditions que vous recherchez.",
+      "s_cloudbackup.title": "Sauvegardes cloud &amp; planifiées", "s_cloudbackup.body": "Sauvegardez automatiquement votre collection selon un planning vers S3, Nextcloud ou tout stockage WebDAV — à configurer une fois pour ne plus jamais craindre de perdre vos données."
+    },
+    de: {
+      "beta263.tag": "Jetzt in der Beta · v26.3", "beta263.badge": "Neu in 26.3 · Beta",
+      "ios.eyebrow": "Demnächst · iOS", "ios.h2": "Eine native DiscVault-App für iPhone und iPad — bald als Beta über TestFlight.", "ios.badge": "TestFlight-Beta bald",
+      "ios.native.title": "Nativ für iOS entwickelt", "ios.native.body": "Eine native iPhone- und iPad-App ist unterwegs. Eine öffentliche Beta kommt bald über TestFlight — weitere Infos folgen.",
+      "ios.standalone.title": "Funktioniert eigenständig", "ios.standalone.body": "Die App läuft komplett allein — kein Server nötig. Verwalte deine Sammlung direkt auf deinem Gerät, ohne das DiscVault-Backend.",
+      "ios.connect.title": "Oder mit deinem Backend verbinden", "ios.connect.body": "Du hostest bereits selbst? Verbinde die native App mit deinem eigenen selbst gehosteten DiscVault 26-Backend, um alles synchron zu halten.",
+      "s_location.title": "Regal- &amp; Standortverfolgung", "s_location.body": "Halte fest, wo jede Disc physisch liegt — Regal, Box oder Raum. Durchsuche nie wieder die ganze Sammlung, wenn du genau weißt, wo ein Titel steht.",
+      "s_condition.title": "Zustand &amp; Sealed-Status", "s_condition.body": "Notiere den Zustand von Hülle und Disc und markiere noch versiegelte Titel. Praktisch für Sammler, die Mint-Exemplare getrennt von ihren Ansehen-Kopien halten.",
+      "s_value.title": "Sammlungswert", "s_value.body": "Erfasse den bezahlten Preis und einen geschätzten aktuellen Wert pro Titel und sieh den Gesamtwert deiner Sammlung auf einen Blick — nützlich für Versicherung und seltene Editionen.",
+      "s_dupes.title": "Duplikaterkennung", "s_dupes.body": "Erhalte einen Hinweis, wenn du eine bereits vorhandene Disc scannst oder hinzufügst, um versehentliche Doppelkäufe zu vermeiden — mit Ausnahme für Sammler, die bewusst mehrere Exemplare behalten.",
+      "s_labels.title": "Regaletiketten drucken", "s_labels.body": "Erzeuge druckbare QR- oder Barcode-Etiketten für deine Regale und Boxen, damit du direkt an die richtige Stelle scannst und jeden Titel in Sekunden findest.",
+      "s_pricealert.title": "Preis- &amp; Deal-Benachrichtigungen", "s_pricealert.body": "Werde benachrichtigt, wenn eine Disc auf deiner Wunschliste im Preis fällt oder im Angebot ist, damit du nie ein gutes Angebot für die gesuchten Editionen verpasst.",
+      "s_cloudbackup.title": "Cloud- &amp; geplante Backups", "s_cloudbackup.body": "Sichere deine Sammlung automatisch nach Zeitplan auf S3, Nextcloud oder beliebigen WebDAV-Speicher — einmal einrichten und nie wieder um deine Daten sorgen."
+    },
+    es: {
+      "beta263.tag": "Ahora en beta · v26.3", "beta263.badge": "Nuevo en 26.3 · Beta",
+      "ios.eyebrow": "Próximamente · iOS", "ios.h2": "Una app nativa de DiscVault para iPhone y iPad — pronto en beta por TestFlight.", "ios.badge": "Beta de TestFlight pronto",
+      "ios.native.title": "Creada de forma nativa para iOS", "ios.native.body": "Una app nativa para iPhone y iPad está en camino. Pronto habrá una beta pública a través de TestFlight — más información en breve.",
+      "ios.standalone.title": "Funciona de forma autónoma", "ios.standalone.body": "La app funciona completamente por sí sola — sin servidor. Gestiona tu colección directamente en tu dispositivo, sin el backend de DiscVault.",
+      "ios.connect.title": "O conéctala a tu backend", "ios.connect.body": "¿Ya te autoalojas? Conecta la app nativa a tu propio backend DiscVault 26 autoalojado para mantenerlo todo sincronizado.",
+      "s_location.title": "Seguimiento de estante &amp; ubicación", "s_location.body": "Registra dónde está físicamente cada disco — estante, caja o habitación. No vuelvas a rebuscar toda la colección cuando sabes exactamente dónde está un título.",
+      "s_condition.title": "Estado &amp; precintado", "s_condition.body": "Anota el estado de la caja y el disco, y marca los títulos aún precintados. Útil para coleccionistas que separan las copias nuevas de las de visionado.",
+      "s_value.title": "Valor de la colección", "s_value.body": "Registra lo que pagaste y un valor actual estimado por título, y ve el valor total de tu colección de un vistazo — útil para seguros y ediciones raras.",
+      "s_dupes.title": "Detección de duplicados", "s_dupes.body": "Recibe un aviso cuando escaneas o añades un disco que ya tienes, para evitar compras duplicadas — con una excepción para quienes guardan varias copias a propósito.",
+      "s_labels.title": "Impresión de etiquetas de estante", "s_labels.body": "Genera etiquetas QR o de código de barras imprimibles para tus estantes y cajas, para escanear directamente al lugar correcto y encontrar cualquier título en segundos.",
+      "s_pricealert.title": "Alertas de precio &amp; ofertas", "s_pricealert.body": "Recibe una notificación cuando un disco de tu lista de deseos baja de precio o está en oferta, para no perderte nunca una buena oferta de las ediciones que buscas.",
+      "s_cloudbackup.title": "Copias en la nube &amp; programadas", "s_cloudbackup.body": "Haz copias de seguridad automáticas de tu colección según un horario en S3, Nextcloud o cualquier almacenamiento WebDAV — configúralo una vez y no vuelvas a preocuparte por perder tus datos."
+    },
+    pt: {
+      "beta263.tag": "Agora em beta · v26.3", "beta263.badge": "Novo na 26.3 · Beta",
+      "ios.eyebrow": "Em breve · iOS", "ios.h2": "Uma app DiscVault nativa para iPhone e iPad — em breve em beta no TestFlight.", "ios.badge": "Beta TestFlight em breve",
+      "ios.native.title": "Criada nativamente para iOS", "ios.native.body": "Uma app nativa para iPhone e iPad está a caminho. Uma beta pública chega em breve através do TestFlight — mais informação em breve.",
+      "ios.standalone.title": "Funciona de forma autónoma", "ios.standalone.body": "A app funciona totalmente sozinha — sem servidor. Gere a sua coleção diretamente no dispositivo, sem o backend DiscVault.",
+      "ios.connect.title": "Ou ligue ao seu backend", "ios.connect.body": "Já faz self-hosting? Ligue a app nativa ao seu próprio backend DiscVault 26 auto-hospedado para manter tudo sincronizado.",
+      "s_location.title": "Controlo de prateleira &amp; localização", "s_location.body": "Registe onde cada disco está fisicamente — prateleira, caixa ou divisão. Nunca mais reviste a coleção inteira quando sabe exatamente onde um título está guardado.",
+      "s_condition.title": "Estado &amp; selado", "s_condition.body": "Anote o estado da caixa e do disco e assinale os títulos ainda selados. Útil para colecionadores que separam cópias novas das de visionamento.",
+      "s_value.title": "Valor da coleção", "s_value.body": "Registe o que pagou e um valor atual estimado por título e veja o valor total da coleção num relance — útil para seguros e edições raras.",
+      "s_dupes.title": "Deteção de duplicados", "s_dupes.body": "Receba um aviso quando digitaliza ou adiciona um disco que já tem, para evitar compras em duplicado — com uma exceção para quem guarda várias cópias de propósito.",
+      "s_labels.title": "Impressão de etiquetas de prateleira", "s_labels.body": "Gere etiquetas QR ou de código de barras imprimíveis para as suas prateleiras e caixas, para digitalizar diretamente no sítio certo e encontrar qualquer título em segundos.",
+      "s_pricealert.title": "Alertas de preço &amp; promoções", "s_pricealert.body": "Seja notificado quando um disco da sua wishlist baixa de preço ou está em promoção, para nunca perder uma boa oferta das edições que procura.",
+      "s_cloudbackup.title": "Backups na cloud &amp; agendados", "s_cloudbackup.body": "Faça backup automático da sua coleção de forma agendada para S3, Nextcloud ou qualquer armazenamento WebDAV — configure uma vez e nunca mais se preocupe em perder dados."
+    },
+    it: {
+      "beta263.tag": "Ora in beta · v26.3", "beta263.badge": "Novità nella 26.3 · Beta",
+      "ios.eyebrow": "Presto · iOS", "ios.h2": "Un'app DiscVault nativa per iPhone e iPad — presto in beta su TestFlight.", "ios.badge": "Beta TestFlight in arrivo",
+      "ios.native.title": "Sviluppata in modo nativo per iOS", "ios.native.body": "Un'app nativa per iPhone e iPad è in arrivo. Una beta pubblica arriverà presto tramite TestFlight — maggiori informazioni a breve.",
+      "ios.standalone.title": "Funziona in autonomia", "ios.standalone.body": "L'app funziona completamente da sola — nessun server richiesto. Gestisci la tua collezione direttamente sul dispositivo, senza il backend DiscVault.",
+      "ios.connect.title": "Oppure collegala al tuo backend", "ios.connect.body": "Fai già self-hosting? Collega l'app nativa al tuo backend DiscVault 26 self-hosted per mantenere tutto sincronizzato.",
+      "s_location.title": "Tracciamento scaffale &amp; posizione", "s_location.body": "Registra dove si trova fisicamente ogni disco — scaffale, scatola o stanza. Non frugare più nell'intera collezione quando sai esattamente dove è riposto un titolo.",
+      "s_condition.title": "Condizione &amp; stato sigillato", "s_condition.body": "Annota le condizioni di custodia e disco e segnala i titoli ancora sigillati. Comodo per i collezionisti che tengono le copie mint separate da quelle da guardare.",
+      "s_value.title": "Valore della collezione", "s_value.body": "Registra quanto hai pagato e un valore attuale stimato per titolo e vedi il valore totale della collezione a colpo d'occhio — utile per assicurazione ed edizioni rare.",
+      "s_dupes.title": "Rilevamento duplicati", "s_dupes.body": "Ricevi un avviso quando scansioni o aggiungi un disco che possiedi già, per evitare acquisti doppi — con un'eccezione per chi tiene più copie di proposito.",
+      "s_labels.title": "Stampa etichette per scaffale", "s_labels.body": "Genera etichette QR o codice a barre stampabili per scaffali e scatole, così scansioni direttamente nel punto giusto e trovi qualsiasi titolo in pochi secondi.",
+      "s_pricealert.title": "Avvisi prezzo &amp; offerte", "s_pricealert.body": "Ricevi una notifica quando un disco nella tua wishlist cala di prezzo o è in offerta, per non perdere mai un buon affare sulle edizioni che cerchi.",
+      "s_cloudbackup.title": "Backup cloud &amp; pianificati", "s_cloudbackup.body": "Esegui il backup automatico della collezione su base pianificata su S3, Nextcloud o qualsiasi storage WebDAV — imposta una volta e non temere mai di perdere i dati."
+    },
+    sv: {
+      "beta263.tag": "Nu i beta · v26.3", "beta263.badge": "Nytt i 26.3 · Beta",
+      "ios.eyebrow": "Kommer snart · iOS", "ios.h2": "En inbyggd DiscVault-app för iPhone och iPad — snart i beta via TestFlight.", "ios.badge": "TestFlight-beta snart",
+      "ios.native.title": "Byggd inbyggt för iOS", "ios.native.body": "En inbyggd app för iPhone och iPad är på väg. En publik beta kommer snart via TestFlight — mer info följer.",
+      "ios.standalone.title": "Fungerar fristående", "ios.standalone.body": "Appen fungerar helt på egen hand — ingen server krävs. Hantera din samling direkt på enheten utan DiscVault-backend.",
+      "ios.connect.title": "Eller anslut till din backend", "ios.connect.body": "Self-hostar du redan? Anslut den inbyggda appen till din egen self-hostade DiscVault 26-backend för att hålla allt synkat.",
+      "s_location.title": "Hyll- &amp; platsspårning", "s_location.body": "Registrera var varje skiva fysiskt finns — hylla, låda eller rum. Leta aldrig igenom hela samlingen igen när du vet exakt var en titel förvaras.",
+      "s_condition.title": "Skick &amp; förseglad status", "s_condition.body": "Notera skicket på fodral och skiva och markera titlar som fortfarande är förseglade. Praktiskt för samlare som håller mint-exemplar åtskilda från sina tittarkopior.",
+      "s_value.title": "Samlingens värde", "s_value.body": "Registrera vad du betalat och ett uppskattat aktuellt värde per titel och se samlingens totala värde med en blick — bra för försäkring och sällsynta utgåvor.",
+      "s_dupes.title": "Dubblettidentifiering", "s_dupes.body": "Få en varning när du skannar eller lägger till en skiva du redan äger, så att du undviker dubbelköp — med undantag för samlare som medvetet behåller flera exemplar.",
+      "s_labels.title": "Utskrift av hylletiketter", "s_labels.body": "Skapa utskrivbara QR- eller streckkodsetiketter för dina hyllor och lådor, så att du skannar direkt till rätt plats och hittar vilken titel som helst på sekunder.",
+      "s_pricealert.title": "Pris- &amp; deal-aviseringar", "s_pricealert.body": "Få en avisering när en skiva på din önskelista sjunker i pris eller reas ut, så att du aldrig missar ett bra fynd på utgåvorna du jagar.",
+      "s_cloudbackup.title": "Moln- &amp; schemalagda backuper", "s_cloudbackup.body": "Säkerhetskopiera automatiskt din samling enligt schema till S3, Nextcloud eller valfri WebDAV-lagring — ställ in en gång och oroa dig aldrig för att förlora data."
+    },
+    no: {
+      "beta263.tag": "Nå i beta · v26.3", "beta263.badge": "Nytt i 26.3 · Beta",
+      "ios.eyebrow": "Kommer snart · iOS", "ios.h2": "En innebygd DiscVault-app for iPhone og iPad — snart i beta via TestFlight.", "ios.badge": "TestFlight-beta snart",
+      "ios.native.title": "Bygget innebygd for iOS", "ios.native.body": "En innebygd app for iPhone og iPad er på vei. En offentlig beta kommer snart via TestFlight — mer info følger.",
+      "ios.standalone.title": "Fungerer frittstående", "ios.standalone.body": "Appen kjører helt på egen hånd — ingen server nødvendig. Administrer samlingen din rett på enheten uten DiscVault-backend.",
+      "ios.connect.title": "Eller koble til backenden din", "ios.connect.body": "Self-hoster du allerede? Koble den innebygde appen til din egen self-hostede DiscVault 26-backend for å holde alt synkronisert.",
+      "s_location.title": "Hylle- &amp; plasseringssporing", "s_location.body": "Registrer hvor hver plate fysisk står — hylle, boks eller rom. Slipp å lete gjennom hele samlingen når du vet nøyaktig hvor en tittel er lagret.",
+      "s_condition.title": "Tilstand &amp; forseglet status", "s_condition.body": "Noter tilstanden på cover og plate, og merk titler som fortsatt er forseglet. Nyttig for samlere som holder mint-eksemplarer atskilt fra visningskopiene.",
+      "s_value.title": "Samlingens verdi", "s_value.body": "Registrer hva du betalte og en estimert nåverdi per tittel, og se den totale verdien av samlingen med ett blikk — nyttig for forsikring og sjeldne utgaver.",
+      "s_dupes.title": "Duplikatgjenkjenning", "s_dupes.body": "Få et varsel når du skanner eller legger til en plate du allerede eier, så du unngår doble kjøp — med et unntak for samlere som bevisst beholder flere eksemplarer.",
+      "s_labels.title": "Utskrift av hylleetiketter", "s_labels.body": "Lag utskrivbare QR- eller strekkodeetiketter for hyllene og boksene dine, så du skanner rett til riktig sted og finner en hvilken som helst tittel på sekunder.",
+      "s_pricealert.title": "Pris- &amp; tilbudsvarsler", "s_pricealert.body": "Få varsel når en plate på ønskelisten din faller i pris eller er på tilbud, så du aldri går glipp av et godt kjøp på utgavene du jakter på.",
+      "s_cloudbackup.title": "Sky- &amp; planlagte backuper", "s_cloudbackup.body": "Ta automatisk backup av samlingen etter en tidsplan til S3, Nextcloud eller hvilken som helst WebDAV-lagring — sett det opp én gang og aldri bekymre deg for å miste data."
+    },
+    fi: {
+      "beta263.tag": "Nyt betassa · v26.3", "beta263.badge": "Uutta 26.3:ssa · Beta",
+      "ios.eyebrow": "Tulossa pian · iOS", "ios.h2": "Natiivi DiscVault-sovellus iPhonelle ja iPadille — pian betana TestFlightissa.", "ios.badge": "TestFlight-beta pian",
+      "ios.native.title": "Rakennettu natiivisti iOS:lle", "ios.native.body": "Natiivi iPhone- ja iPad-sovellus on tulossa. Julkinen beta saapuu pian TestFlightin kautta — lisätietoja seuraa.",
+      "ios.standalone.title": "Toimii itsenäisesti", "ios.standalone.body": "Sovellus toimii täysin itsenäisesti — palvelinta ei tarvita. Hallitse kokoelmaasi suoraan laitteellasi ilman DiscVault-backendia.",
+      "ios.connect.title": "Tai yhdistä backendiisi", "ios.connect.body": "Isännöitkö jo itse? Yhdistä natiivisovellus omaan itse isännöityyn DiscVault 26 -backendiin pitääksesi kaiken synkronoituna.",
+      "s_location.title": "Hylly- &amp; sijaintiseuranta", "s_location.body": "Merkitse, missä jokainen levy fyysisesti sijaitsee — hylly, laatikko tai huone. Älä koskaan penko koko kokoelmaa, kun tiedät tarkalleen missä nimike on.",
+      "s_condition.title": "Kunto &amp; sinetöity tila", "s_condition.body": "Kirjaa kotelon ja levyn kunto ja merkitse vielä sinetöidyt nimikkeet. Kätevä keräilijöille, jotka pitävät mint-kappaleet erillään katselukopioista.",
+      "s_value.title": "Kokoelman arvo", "s_value.body": "Kirjaa maksamasi hinta ja arvioitu nykyarvo nimikettä kohden ja näe kokoelmasi kokonaisarvo yhdellä silmäyksellä — hyödyllistä vakuutukseen ja harvinaisten painosten seurantaan.",
+      "s_dupes.title": "Kaksoiskappaleiden tunnistus", "s_dupes.body": "Saat huomautuksen, kun skannaat tai lisäät levyn, joka sinulla jo on, jotta vältät vahingossa tehdyt kaksoisostot — poikkeuksena keräilijät, jotka pitävät tarkoituksella useita kappaleita.",
+      "s_labels.title": "Hyllytarrojen tulostus", "s_labels.body": "Luo tulostettavia QR- tai viivakooditarroja hyllyillesi ja laatikoillesi, jotta skannaat suoraan oikeaan paikkaan ja löydät minkä tahansa nimikkeen sekunneissa.",
+      "s_pricealert.title": "Hinta- &amp; tarjoushälytykset", "s_pricealert.body": "Saat ilmoituksen, kun toivelistasi levy halpenee tai on tarjouksessa, jotta et koskaan menetä hyvää diiliä etsimistäsi painoksista.",
+      "s_cloudbackup.title": "Pilvi- &amp; ajastetut varmuuskopiot", "s_cloudbackup.body": "Varmuuskopioi kokoelmasi automaattisesti aikataulun mukaan S3:een, Nextcloudiin tai mihin tahansa WebDAV-tallennukseen — aseta kerran äläkä koskaan pelkää tietojen menettämistä."
+    },
+    da: {
+      "beta263.tag": "Nu i beta · v26.3", "beta263.badge": "Nyt i 26.3 · Beta",
+      "ios.eyebrow": "Kommer snart · iOS", "ios.h2": "En indbygget DiscVault-app til iPhone og iPad — snart i beta via TestFlight.", "ios.badge": "TestFlight-beta snart",
+      "ios.native.title": "Bygget indbygget til iOS", "ios.native.body": "En indbygget app til iPhone og iPad er på vej. En offentlig beta kommer snart via TestFlight — mere info følger.",
+      "ios.standalone.title": "Fungerer selvstændigt", "ios.standalone.body": "Appen kører helt på egen hånd — ingen server påkrævet. Administrer din samling direkte på enheden uden DiscVault-backend.",
+      "ios.connect.title": "Eller forbind til din backend", "ios.connect.body": "Self-hoster du allerede? Forbind den indbyggede app til din egen self-hostede DiscVault 26-backend for at holde alt synkroniseret.",
+      "s_location.title": "Hylde- &amp; placeringssporing", "s_location.body": "Registrer hvor hver disk fysisk står — hylde, kasse eller rum. Undgå at rode hele samlingen igennem, når du ved præcis hvor en titel er placeret.",
+      "s_condition.title": "Stand &amp; forseglet status", "s_condition.body": "Notér standen på cover og disk, og markér titler der stadig er forseglede. Praktisk for samlere der holder mint-eksemplarer adskilt fra deres visningskopier.",
+      "s_value.title": "Samlingens værdi", "s_value.body": "Registrer hvad du betalte og en estimeret aktuel værdi per titel, og se den samlede værdi af din samling med ét blik — nyttigt til forsikring og sjældne udgaver.",
+      "s_dupes.title": "Dublet-registrering", "s_dupes.body": "Få besked når du scanner eller tilføjer en disk, du allerede ejer, så du undgår dobbeltkøb — med en undtagelse for samlere der bevidst beholder flere eksemplarer.",
+      "s_labels.title": "Udskrivning af hyldeetiketter", "s_labels.body": "Generér printbare QR- eller stregkodeetiketter til dine hylder og kasser, så du scanner direkte til det rigtige sted og finder enhver titel på sekunder.",
+      "s_pricealert.title": "Pris- &amp; tilbudsalarmer", "s_pricealert.body": "Få besked når en disk på din ønskeliste falder i pris eller er på tilbud, så du aldrig går glip af et godt tilbud på de udgaver, du jagter.",
+      "s_cloudbackup.title": "Cloud- &amp; planlagte backups", "s_cloudbackup.body": "Tag automatisk backup af din samling efter en tidsplan til S3, Nextcloud eller enhver WebDAV-lagring — sæt det op én gang og bekymr dig aldrig om at miste dine data."
+    },
+    ja: {
+      "beta263.tag": "ベータ提供中 · v26.3", "beta263.badge": "26.3 の新機能 · Beta",
+      "ios.eyebrow": "近日公開 · iOS", "ios.h2": "iPhone と iPad 向けの native DiscVault アプリ — まもなく TestFlight でベータ提供。", "ios.badge": "まもなく TestFlight ベータ",
+      "ios.native.title": "iOS 向けにネイティブ設計", "ios.native.body": "iPhone と iPad 向けの native アプリを準備中です。まもなく TestFlight で public beta を提供します — 詳細は追ってお知らせします。",
+      "ios.standalone.title": "単体で動作", "ios.standalone.body": "アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。",
+      "ios.connect.title": "または backend に接続", "ios.connect.body": "すでに self-host していますか?native アプリを自分の self-hosted DiscVault 26 backend に接続すれば、すべてを同期できます。",
+      "s_location.title": "棚 &amp; 保管場所の記録", "s_location.body": "各ディスクが物理的にどこにあるか（棚、箱、部屋）を記録します。保管場所が分かれば、もうコレクション全体を探し回る必要はありません。",
+      "s_condition.title": "状態 &amp; 未開封ステータス", "s_condition.body": "ケースとディスクの状態を記録し、未開封の作品にフラグを立てます。鑑賞用と新品を分けて管理したいコレクターに便利です。",
+      "s_value.title": "コレクションの価値", "s_value.body": "作品ごとに購入価格と推定現在価値を記録し、コレクション全体の総額を一目で確認できます。保険や希少版の管理に役立ちます。",
+      "s_dupes.title": "重複検出", "s_dupes.body": "すでに所有しているディスクをスキャンまたは追加したときに通知し、うっかり二重購入するのを防ぎます。意図的に複数所有する場合は例外設定も可能です。",
+      "s_labels.title": "棚ラベルの印刷", "s_labels.body": "棚や箱用に印刷可能な QR またはバーコードラベルを生成し、正しい場所へ直接スキャンして、どの作品も数秒で見つけられます。",
+      "s_pricealert.title": "価格 &amp; セール通知", "s_pricealert.body": "ウィッシュリストのディスクが値下がりまたはセールになると通知します。探している版のお得な機会を逃しません。",
+      "s_cloudbackup.title": "クラウド &amp; スケジュールバックアップ", "s_cloudbackup.body": "S3、Nextcloud、任意の WebDAV ストレージへ、スケジュールに沿ってコレクションを自動バックアップします。一度設定すれば、データ消失の心配は不要です。"
+    },
+    zh: {
+      "beta263.tag": "现处于 beta · v26.3", "beta263.badge": "26.3 新增 · Beta",
+      "ios.eyebrow": "即将推出 · iOS", "ios.h2": "面向 iPhone 和 iPad 的原生 DiscVault 应用 — 即将在 TestFlight 上开启 beta。", "ios.badge": "TestFlight beta 即将上线",
+      "ios.native.title": "为 iOS 原生打造", "ios.native.body": "面向 iPhone 和 iPad 的原生应用正在开发中。公开 beta 即将通过 TestFlight 推出 — 更多信息稍后公布。",
+      "ios.standalone.title": "可独立运行", "ios.standalone.body": "应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。",
+      "ios.connect.title": "或连接到你的 backend", "ios.connect.body": "已经在 self-host?将原生应用连接到你自己 self-hosted 的 DiscVault 26 backend，让一切保持同步。",
+      "s_location.title": "货架 &amp; 位置追踪", "s_location.body": "记录每张光盘的实际存放位置 — 货架、盒子或房间。当你确切知道某个标题存放在哪里时，就不必再翻遍整个收藏。",
+      "s_condition.title": "品相 &amp; 未拆封状态", "s_condition.body": "记录包装盒和光盘的品相，并标记仍未拆封的标题。适合把全新收藏与观看用副本分开管理的收藏者。",
+      "s_value.title": "收藏价值", "s_value.body": "记录每个标题的购入价格和估计现值，一眼查看整个收藏的总价值 — 对保险和稀有版本追踪很有用。",
+      "s_dupes.title": "重复检测", "s_dupes.body": "当你扫描或添加已拥有的光盘时收到提醒，避免误买重复 — 并为有意保留多份的收藏者提供例外选项。",
+      "s_labels.title": "货架标签打印", "s_labels.body": "为货架和盒子生成可打印的 QR 或条形码标签，让你直接扫描到正确位置，几秒钟找到任何标题。",
+      "s_pricealert.title": "价格 &amp; 优惠提醒", "s_pricealert.body": "当心愿单中的光盘降价或促销时收到通知，绝不错过你在追的版本的好价。",
+      "s_cloudbackup.title": "云端 &amp; 定时备份", "s_cloudbackup.body": "按计划自动将收藏备份到 S3、Nextcloud 或任意 WebDAV 存储 — 设置一次，再也不用担心数据丢失。"
+    },
+    ko: {
+      "beta263.tag": "베타 진행 중 · v26.3", "beta263.badge": "26.3 신규 · 베타",
+      "ios.eyebrow": "곧 출시 · iOS", "ios.h2": "iPhone과 iPad용 네이티브 DiscVault 앱 — 곧 TestFlight에서 베타.", "ios.badge": "TestFlight 베타 곧",
+      "ios.native.title": "iOS용 네이티브 제작", "ios.native.body": "iPhone과 iPad용 네이티브 앱을 준비 중입니다. 곧 TestFlight를 통해 공개 베타가 제공됩니다 — 자세한 내용은 곧 안내합니다.",
+      "ios.standalone.title": "독립 실행", "ios.standalone.body": "앱은 완전히 독립적으로 실행되며 서버가 필요 없습니다. DiscVault backend 없이 기기에서 바로 컬렉션을 관리하세요.",
+      "ios.connect.title": "또는 backend에 연결", "ios.connect.body": "이미 self-host 중이신가요?네이티브 앱을 직접 self-hosted한 DiscVault 26 backend에 연결해 모든 것을 동기화하세요.",
+      "s_location.title": "선반 &amp; 위치 추적", "s_location.body": "각 디스크가 실제로 어디에 있는지(선반, 상자, 방) 기록하세요. 정확한 보관 위치를 알면 다시는 컬렉션 전체를 뒤질 필요가 없습니다.",
+      "s_condition.title": "상태 &amp; 미개봉 여부", "s_condition.body": "케이스와 디스크 상태를 기록하고 아직 미개봉인 타이틀을 표시하세요. 새 제품과 감상용 사본을 따로 관리하는 수집가에게 유용합니다.",
+      "s_value.title": "컬렉션 가치", "s_value.body": "타이틀별로 구입가와 추정 현재 가치를 기록하고 컬렉션의 총 가치를 한눈에 확인하세요 — 보험과 희귀 에디션 관리에 유용합니다.",
+      "s_dupes.title": "중복 감지", "s_dupes.body": "이미 보유한 디스크를 스캔하거나 추가할 때 알려주어 실수로 중복 구매하는 것을 막아줍니다 — 여러 사본을 일부러 보관하는 수집가를 위한 예외도 있습니다.",
+      "s_labels.title": "선반 라벨 인쇄", "s_labels.body": "선반과 상자용으로 인쇄 가능한 QR 또는 바코드 라벨을 생성해, 올바른 위치로 바로 스캔하고 어떤 타이틀이든 몇 초 만에 찾으세요.",
+      "s_pricealert.title": "가격 &amp; 특가 알림", "s_pricealert.body": "위시리스트의 디스크가 가격이 내려가거나 세일에 들어가면 알림을 받아, 찾고 있는 에디션의 좋은 기회를 놓치지 마세요.",
+      "s_cloudbackup.title": "클라우드 &amp; 예약 백업", "s_cloudbackup.body": "일정에 따라 컬렉션을 S3, Nextcloud 또는 모든 WebDAV 스토리지에 자동 백업하세요 — 한 번 설정하면 데이터 손실 걱정이 없습니다."
+    },
+    uk: {
+      "beta263.tag": "Зараз у беті · v26.3", "beta263.badge": "Нове в 26.3 · Бета",
+      "ios.eyebrow": "Незабаром · iOS", "ios.h2": "Нативний застосунок DiscVault для iPhone та iPad — незабаром бета в TestFlight.", "ios.badge": "Бета TestFlight незабаром",
+      "ios.native.title": "Створено нативно для iOS", "ios.native.body": "Нативний застосунок для iPhone та iPad уже в дорозі. Публічна бета скоро вийде через TestFlight — більше інформації згодом.",
+      "ios.standalone.title": "Працює автономно", "ios.standalone.body": "Застосунок працює повністю самостійно — сервер не потрібен. Керуйте колекцією прямо на пристрої без backend DiscVault.",
+      "ios.connect.title": "Або підключіть до свого backend", "ios.connect.body": "Уже маєте self-hosting?Підключіть нативний застосунок до власного self-hosted backend DiscVault 26, щоб усе було синхронізовано.",
+      "s_location.title": "Відстеження полиці &amp; розташування", "s_location.body": "Записуйте, де фізично лежить кожен диск — полиця, коробка чи кімната. Більше не перебирайте всю колекцію, коли точно знаєте, де зберігається назва.",
+      "s_condition.title": "Стан &amp; запечатаний статус", "s_condition.body": "Занотуйте стан коробки й диска та позначайте ще запечатані назви. Зручно для колекціонерів, які тримають нові екземпляри окремо від переглядових копій.",
+      "s_value.title": "Вартість колекції", "s_value.body": "Записуйте сплачену ціну та оцінну поточну вартість кожної назви й бачте загальну вартість колекції з одного погляду — корисно для страхування та рідкісних видань.",
+      "s_dupes.title": "Виявлення дублікатів", "s_dupes.body": "Отримуйте попередження, коли скануєте або додаєте диск, який уже маєте, щоб уникнути випадкових повторних покупок — з винятком для тих, хто свідомо тримає кілька копій.",
+      "s_labels.title": "Друк етикеток для полиць", "s_labels.body": "Створюйте придатні для друку QR- або штрихкод-етикетки для полиць і коробок, щоб сканувати одразу в потрібне місце й знаходити будь-яку назву за секунди.",
+      "s_pricealert.title": "Сповіщення про ціни &amp; акції", "s_pricealert.body": "Отримуйте сповіщення, коли диск зі списку бажань дешевшає або потрапляє в розпродаж, щоб не пропустити вигідну пропозицію на видання, які шукаєте.",
+      "s_cloudbackup.title": "Хмарні &amp; заплановані резервні копії", "s_cloudbackup.body": "Автоматично створюйте резервні копії колекції за розкладом у S3, Nextcloud або будь-яке сховище WebDAV — налаштуйте раз і ніколи не хвилюйтеся про втрату даних."
+    },
+    pl: {
+      "beta263.tag": "Teraz w becie · v26.3", "beta263.badge": "Nowość w 26.3 · Beta",
+      "ios.eyebrow": "Wkrótce · iOS", "ios.h2": "Natywna aplikacja DiscVault na iPhone'a i iPada — wkrótce w becie przez TestFlight.", "ios.badge": "Beta TestFlight wkrótce",
+      "ios.native.title": "Zbudowana natywnie na iOS", "ios.native.body": "Natywna aplikacja na iPhone'a i iPada jest w drodze. Publiczna beta pojawi się wkrótce przez TestFlight — więcej informacji wkrótce.",
+      "ios.standalone.title": "Działa samodzielnie", "ios.standalone.body": "Aplikacja działa całkowicie samodzielnie — bez serwera. Zarządzaj kolekcją bezpośrednio na urządzeniu, bez backendu DiscVault.",
+      "ios.connect.title": "Albo połącz z backendem", "ios.connect.body": "Już self-hostujesz?Połącz natywną aplikację z własnym self-hostowanym backendem DiscVault 26, aby wszystko było zsynchronizowane.",
+      "s_location.title": "Śledzenie półki &amp; lokalizacji", "s_location.body": "Zapisuj, gdzie fizycznie znajduje się każda płyta — półka, pudełko lub pokój. Nie przeszukuj już całej kolekcji, gdy dokładnie wiesz, gdzie tytuł jest przechowywany.",
+      "s_condition.title": "Stan &amp; status zafoliowania", "s_condition.body": "Zanotuj stan pudełka i płyty oraz oznacz tytuły wciąż zafoliowane. Przydatne dla kolekcjonerów trzymających egzemplarze mint oddzielnie od kopii do oglądania.",
+      "s_value.title": "Wartość kolekcji", "s_value.body": "Zapisuj zapłaconą cenę i szacowaną obecną wartość każdego tytułu i sprawdzaj łączną wartość kolekcji jednym spojrzeniem — przydatne przy ubezpieczeniu i rzadkich wydaniach.",
+      "s_dupes.title": "Wykrywanie duplikatów", "s_dupes.body": "Otrzymuj ostrzeżenie, gdy skanujesz lub dodajesz płytę, którą już masz, aby uniknąć przypadkowych podwójnych zakupów — z wyjątkiem dla kolekcjonerów celowo trzymających kilka egzemplarzy.",
+      "s_labels.title": "Drukowanie etykiet na półki", "s_labels.body": "Generuj drukowalne etykiety QR lub kody kreskowe dla półek i pudełek, aby skanować prosto do właściwego miejsca i znajdować dowolny tytuł w kilka sekund.",
+      "s_pricealert.title": "Alerty o cenach &amp; okazjach", "s_pricealert.body": "Otrzymuj powiadomienie, gdy płyta z listy życzeń tanieje lub jest w promocji, aby nigdy nie przegapić dobrej okazji na wydania, których szukasz.",
+      "s_cloudbackup.title": "Kopie w chmurze &amp; zaplanowane", "s_cloudbackup.body": "Automatycznie twórz kopie zapasowe kolekcji według harmonogramu do S3, Nextcloud lub dowolnego magazynu WebDAV — ustaw raz i nigdy nie martw się o utratę danych."
+    },
+    el: {
+      "beta263.tag": "Τώρα σε beta · v26.3", "beta263.badge": "Νέο στην 26.3 · Beta",
+      "ios.eyebrow": "Σύντομα · iOS", "ios.h2": "Μια native εφαρμογή DiscVault για iPhone και iPad — σύντομα σε beta μέσω TestFlight.", "ios.badge": "Beta TestFlight σύντομα",
+      "ios.native.title": "Φτιαγμένη native για iOS", "ios.native.body": "Μια native εφαρμογή για iPhone και iPad έρχεται. Μια δημόσια beta θα είναι σύντομα διαθέσιμη μέσω TestFlight — περισσότερες πληροφορίες σύντομα.",
+      "ios.standalone.title": "Λειτουργεί αυτόνομα", "ios.standalone.body": "Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault.",
+      "ios.connect.title": "Ή συνδέστε την στο backend σας", "ios.connect.body": "Κάνετε ήδη self-hosting;Συνδέστε τη native εφαρμογή στο δικό σας self-hosted backend DiscVault 26 ώστε να παραμένουν όλα συγχρονισμένα.",
+      "s_location.title": "Παρακολούθηση ραφιού &amp; θέσης", "s_location.body": "Καταγράψτε πού βρίσκεται φυσικά κάθε δίσκος — ράφι, κουτί ή δωμάτιο. Μην ψάχνετε ξανά όλη τη συλλογή όταν ξέρετε ακριβώς πού φυλάσσεται ένας τίτλος.",
+      "s_condition.title": "Κατάσταση &amp; σφραγισμένο status", "s_condition.body": "Σημειώστε την κατάσταση θήκης και δίσκου και επισημάνετε τους ακόμη σφραγισμένους τίτλους. Χρήσιμο για συλλέκτες που κρατούν τα mint αντίτυπα ξεχωριστά από τα αντίτυπα προβολής.",
+      "s_value.title": "Αξία συλλογής", "s_value.body": "Καταγράψτε τι πληρώσατε και μια εκτιμώμενη τρέχουσα αξία ανά τίτλο και δείτε τη συνολική αξία της συλλογής με μια ματιά — χρήσιμο για ασφάλιση και σπάνιες εκδόσεις.",
+      "s_dupes.title": "Εντοπισμός διπλότυπων", "s_dupes.body": "Λάβετε ειδοποίηση όταν σαρώνετε ή προσθέτετε έναν δίσκο που ήδη έχετε, ώστε να αποφεύγετε κατά λάθος διπλές αγορές — με εξαίρεση για συλλέκτες που κρατούν σκόπιμα πολλά αντίτυπα.",
+      "s_labels.title": "Εκτύπωση ετικετών ραφιού", "s_labels.body": "Δημιουργήστε εκτυπώσιμες ετικέτες QR ή barcode για τα ράφια και τα κουτιά σας, ώστε να σαρώνετε κατευθείαν στη σωστή θέση και να βρίσκετε οποιονδήποτε τίτλο σε δευτερόλεπτα.",
+      "s_pricealert.title": "Ειδοποιήσεις τιμής &amp; προσφορών", "s_pricealert.body": "Λάβετε ειδοποίηση όταν ένας δίσκος στη wishlist σας πέφτει σε τιμή ή είναι σε προσφορά, ώστε να μη χάνετε ποτέ μια καλή ευκαιρία στις εκδόσεις που κυνηγάτε.",
+      "s_cloudbackup.title": "Cloud &amp; προγραμματισμένα backup", "s_cloudbackup.body": "Δημιουργήστε αυτόματα backup της συλλογής σας βάσει προγράμματος σε S3, Nextcloud ή οποιονδήποτε αποθηκευτικό χώρο WebDAV — ρυθμίστε το μία φορά και μην ανησυχείτε ποτέ για απώλεια δεδομένων."
+    },
+    hu: {
+      "beta263.tag": "Most bétában · v26.3", "beta263.badge": "Új a 26.3-ban · Béta",
+      "ios.eyebrow": "Hamarosan · iOS", "ios.h2": "Natív DiscVault alkalmazás iPhone-ra és iPadre — hamarosan bétában a TestFlighton.", "ios.badge": "TestFlight béta hamarosan",
+      "ios.native.title": "Natívan iOS-re építve", "ios.native.body": "Egy natív iPhone- és iPad-alkalmazás úton van. Nyilvános béta hamarosan érkezik a TestFlighton keresztül — további információ hamarosan.",
+      "ios.standalone.title": "Önállóan működik", "ios.standalone.body": "Az alkalmazás teljesen önállóan fut — nincs szükség szerverre. Kezelje gyűjteményét közvetlenül a készülékén, DiscVault backend nélkül.",
+      "ios.connect.title": "Vagy kösse össze a backendjével", "ios.connect.body": "Már self-hostol?Kösse össze a natív alkalmazást a saját self-hosted DiscVault 26 backendjével, hogy minden szinkronban maradjon.",
+      "s_location.title": "Polc- &amp; helykövetés", "s_location.body": "Rögzítse, hol van fizikailag minden lemez — polc, doboz vagy szoba. Soha többé ne túrja át az egész gyűjteményt, ha pontosan tudja, hol van egy cím.",
+      "s_condition.title": "Állapot &amp; bontatlan státusz", "s_condition.body": "Jegyezze fel a tok és a lemez állapotát, és jelölje a még bontatlan címeket. Hasznos azoknak, akik a bontatlan példányokat elkülönítik a megtekintési példányoktól.",
+      "s_value.title": "Gyűjtemény értéke", "s_value.body": "Rögzítse a fizetett árat és egy becsült aktuális értéket címenként, és lássa a gyűjtemény teljes értékét egy pillantással — hasznos biztosításhoz és ritka kiadásokhoz.",
+      "s_dupes.title": "Duplikátumok felismerése", "s_dupes.body": "Kapjon figyelmeztetést, amikor már meglévő lemezt szkennel vagy ad hozzá, hogy elkerülje a véletlen dupla vásárlást — kivétellel azoknak, akik szándékosan tartanak több példányt.",
+      "s_labels.title": "Polccímkék nyomtatása", "s_labels.body": "Készítsen nyomtatható QR- vagy vonalkódcímkéket a polcaihoz és dobozaihoz, hogy egyenesen a megfelelő helyre szkenneljen, és másodpercek alatt megtaláljon bármely címet.",
+      "s_pricealert.title": "Ár- &amp; akciófigyelő", "s_pricealert.body": "Kapjon értesítést, ha egy kívánságlistán lévő lemez ára csökken vagy akcióba kerül, hogy soha ne maradjon le egy jó ajánlatról a keresett kiadásoknál.",
+      "s_cloudbackup.title": "Felhő- &amp; ütemezett mentések", "s_cloudbackup.body": "Automatikusan mentse gyűjteményét ütemezetten S3-ba, Nextcloudba vagy bármilyen WebDAV-tárolóba — állítsa be egyszer, és soha ne aggódjon az adatvesztés miatt."
+    },
+    cs: {
+      "beta263.tag": "Nyní v betě · v26.3", "beta263.badge": "Novinka v 26.3 · Beta",
+      "ios.eyebrow": "Již brzy · iOS", "ios.h2": "Nativní aplikace DiscVault pro iPhone a iPad — brzy v betě přes TestFlight.", "ios.badge": "Beta TestFlight brzy",
+      "ios.native.title": "Vytvořeno nativně pro iOS", "ios.native.body": "Nativní aplikace pro iPhone a iPad je na cestě. Veřejná beta bude brzy k dispozici přes TestFlight — více informací brzy.",
+      "ios.standalone.title": "Funguje samostatně", "ios.standalone.body": "Aplikace běží zcela samostatně — bez serveru. Spravujte svou sbírku přímo v zařízení bez backendu DiscVault.",
+      "ios.connect.title": "Nebo připojte ke svému backendu", "ios.connect.body": "Už self-hostujete?Připojte nativní aplikaci k vlastnímu self-hosted backendu DiscVault 26, aby vše zůstalo synchronizované.",
+      "s_location.title": "Sledování police &amp; umístění", "s_location.body": "Zaznamenejte, kde je každý disk fyzicky uložen — police, krabice nebo místnost. Už nikdy neprohledávejte celou sbírku, když přesně víte, kde titul je.",
+      "s_condition.title": "Stav &amp; zapečetěný status", "s_condition.body": "Zaznamenejte stav obalu a disku a označte tituly, které jsou stále zapečetěné. Praktické pro sběratele, kteří drží nové kusy odděleně od kopií na sledování.",
+      "s_value.title": "Hodnota sbírky", "s_value.body": "Zaznamenejte, kolik jste zaplatili, a odhadovanou aktuální hodnotu každého titulu a sledujte celkovou hodnotu sbírky jedním pohledem — užitečné pro pojištění a vzácné edice.",
+      "s_dupes.title": "Detekce duplicit", "s_dupes.body": "Získejte upozornění, když skenujete nebo přidáváte disk, který už vlastníte, abyste se vyhnuli náhodným dvojím nákupům — s výjimkou pro sběratele, kteří záměrně drží více kopií.",
+      "s_labels.title": "Tisk štítků na police", "s_labels.body": "Vytvářejte tisknutelné QR nebo čárové štítky pro police a krabice, abyste skenovali rovnou na správné místo a našli jakýkoli titul během sekund.",
+      "s_pricealert.title": "Upozornění na ceny &amp; slevy", "s_pricealert.body": "Dostávejte oznámení, když disk ve vašem seznamu přání zlevní nebo je ve slevě, abyste nikdy nepřišli o dobrou nabídku na edice, které hledáte.",
+      "s_cloudbackup.title": "Cloudové &amp; plánované zálohy", "s_cloudbackup.body": "Automaticky zálohujte svou sbírku podle plánu do S3, Nextcloudu nebo libovolného úložiště WebDAV — nastavte jednou a nikdy se nebojte o ztrátu dat."
+    },
+    tr: {
+      "beta263.tag": "Şimdi beta · v26.3", "beta263.badge": "26.3'te yeni · Beta",
+      "ios.eyebrow": "Yakında · iOS", "ios.h2": "iPhone ve iPad için yerel DiscVault uygulaması — yakında TestFlight'ta beta.", "ios.badge": "TestFlight beta yakında",
+      "ios.native.title": "iOS için yerel olarak geliştirildi", "ios.native.body": "iPhone ve iPad için yerel bir uygulama yolda. Herkese açık beta yakında TestFlight üzerinden geliyor — daha fazla bilgi çok yakında.",
+      "ios.standalone.title": "Bağımsız çalışır", "ios.standalone.body": "Uygulama tamamen kendi başına çalışır — sunucu gerekmez. Koleksiyonunuzu DiscVault backend olmadan doğrudan cihazınızda yönetin.",
+      "ios.connect.title": "Ya da backend'inize bağlayın", "ios.connect.body": "Zaten self-host mu ediyorsunuz?Yerel uygulamayı kendi self-hosted DiscVault 26 backend'inize bağlayarak her şeyi senkron tutun.",
+      "s_location.title": "Raf &amp; konum takibi", "s_location.body": "Her diskin fiziksel olarak nerede olduğunu kaydedin — raf, kutu veya oda. Bir başlığın tam olarak nerede saklandığını bildiğinizde bir daha tüm koleksiyonu karıştırmayın.",
+      "s_condition.title": "Durum &amp; ambalajlı durumu", "s_condition.body": "Kutu ve diskin durumunu not edin ve hâlâ ambalajlı başlıkları işaretleyin. Sıfır kopyaları izleme kopyalarından ayrı tutan koleksiyoncular için kullanışlı.",
+      "s_value.title": "Koleksiyon değeri", "s_value.body": "Başlık başına ödediğiniz tutarı ve tahmini güncel değeri kaydedin ve koleksiyonunuzun toplam değerini tek bakışta görün — sigorta ve nadir sürümler için faydalı.",
+      "s_dupes.title": "Yinelenen tespiti", "s_dupes.body": "Zaten sahip olduğunuz bir diski tarayıp eklerken uyarı alın, böylece yanlışlıkla çift satın almaktan kaçının — bilerek birden fazla kopya tutan koleksiyoncular için istisnayla.",
+      "s_labels.title": "Raf etiketi yazdırma", "s_labels.body": "Raflarınız ve kutularınız için yazdırılabilir QR veya barkod etiketleri oluşturun, böylece doğrudan doğru yere tarayıp herhangi bir başlığı saniyeler içinde bulun.",
+      "s_pricealert.title": "Fiyat &amp; fırsat uyarıları", "s_pricealert.body": "İstek listenizdeki bir diskin fiyatı düştüğünde veya indirime girdiğinde bildirim alın, böylece peşinde olduğunuz sürümlerde iyi bir fırsatı asla kaçırmayın.",
+      "s_cloudbackup.title": "Bulut &amp; zamanlanmış yedekler", "s_cloudbackup.body": "Koleksiyonunuzu bir zamanlamaya göre S3, Nextcloud veya herhangi bir WebDAV depolamaya otomatik yedekleyin — bir kez ayarlayın ve verilerinizi kaybetmekten bir daha endişe etmeyin."
+    }
+  };
+  var featKeys = ["s_location", "s_condition", "s_value", "s_dupes", "s_labels", "s_pricealert", "s_cloudbackup"];
+  Object.keys(L).forEach(function (lang) {
+    if (!T[lang]) return;
+    Object.assign(T[lang], L[lang]);
+    featKeys.forEach(function (k) { T[lang][k + ".badge"] = plannedBadge[lang]; });
+  });
+})();
