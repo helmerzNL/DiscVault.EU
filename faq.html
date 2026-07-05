@@ -198,8 +198,7 @@
       </span>
     </footer>
 
-    <script src="./translations.js?v=12"></script>
-    <script src="./translations-extra.js?v=4"></script>
+    <script src="./i18n.js?v=1"></script>
     <script>
       document.querySelector('.hamburger').addEventListener('click', function () {
         var open = this.getAttribute('aria-expanded') === 'true';
@@ -212,31 +211,6 @@
           document.querySelector('.site-nav').classList.remove('open');
         });
       });
-
-      function setLang(lang) {
-        var t = T[lang] || T.en;
-        document.documentElement.lang = lang;
-        document.querySelectorAll('[data-i18n]').forEach(function(el) {
-          var key = el.getAttribute('data-i18n');
-          var v = t[key];
-          if (v === undefined) v = T.en[key];
-          if (v !== undefined) el.innerHTML = v;
-        });
-        var sel = document.querySelector('.lang-select');
-        if (sel) sel.value = lang;
-        try { localStorage.setItem('dv-lang', lang); } catch(e) {}
-      }
-
-      document.querySelector('.lang-select').addEventListener('change', function() {
-        setLang(this.value);
-      });
-
-      (function() {
-        var saved; try { saved = localStorage.getItem('dv-lang'); } catch(e) {}
-        var pref = saved || (navigator.language || '').slice(0,2).toLowerCase();
-        if (pref === 'nb' || pref === 'nn') pref = 'no';
-        if (T[pref]) setLang(pref);
-      })();
     </script>
   </body>
 </html>
