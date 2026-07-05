@@ -140,10 +140,12 @@
           <li><strong>App preferences</strong> — display and filtering settings you choose.</li>
           <li>
             <strong>Credentials in the iOS Keychain</strong> — if you connect a server, your
-            DiscVault server URL and personal API key; and, for metadata lookups, a
+            DiscVault server URL and the sign-in (session) token issued after you
+            authenticate with your passkey; and, for metadata lookups, a
             device-only cryptographic key, a randomly generated device identifier, and a
             service token (see Section 5). These are stored securely and are only
-            accessible to the app on this device.
+            accessible to the app on this device. Your passkey itself is managed by iOS
+            (or your credential manager) and is never stored or seen by the app.
           </li>
         </ul>
         <p>
@@ -154,11 +156,13 @@
 
         <h2>4. Data you send to your own DiscVault server</h2>
         <p>
-          DiscVault is designed to be self-hosted. If you enter your server’s address and a
-          personal API key in Settings, the app can sync your library, watchlist, and watch
-          history to and from <em>your own</em> DiscVault server. In that case:
+          DiscVault is designed to be self-hosted. If you enter your server’s address and
+          sign in with your DiscVault passkey — the same passkey you created when setting up
+          DiscVault — the app can sync your library, watchlist, and watch history to and from
+          <em>your own</em> DiscVault server. In that case:
         </p>
         <ul>
+          <li>Sign-in uses your passkey (WebAuthn). The passkey ceremony runs in a secure system browser session; the app receives only a session token, never a password or your passkey’s private key.</li>
           <li>The data goes directly from the app to the server you control — it does not pass through us.</li>
           <li>You (or your server’s administrator) are responsible for that server, its security, and its data.</li>
           <li>Connecting a server is entirely optional; the app works without it.</li>
@@ -182,7 +186,7 @@
         <ul>
           <li>Your name, email address, Apple ID, or any account.</li>
           <li>Your library, watchlist, or watch history.</li>
-          <li>Your DiscVault server address or API key.</li>
+          <li>Your DiscVault server address, passkey, or session token.</li>
           <li>Your device’s advertising identifier, location, or contacts.</li>
         </ul>
         <p>
