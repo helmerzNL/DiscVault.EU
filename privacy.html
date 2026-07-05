@@ -104,8 +104,10 @@
             advertising, or third-party tracking. It requires no account to use. Your
             library is stored on your device, optionally synced to your own self-hosted
             DiscVault server, and film/series metadata is fetched from our MovieVault
-            service using only a barcode or search term — never your collection or your
-            identity.
+            service using only a barcode or search term. If you correct or add metadata
+            for a title, those film/series facts may be contributed back to MovieVault to
+            improve the shared catalogue — but never your collection, your ownership
+            records, or your identity.
           </p>
         </div>
 
@@ -167,8 +169,9 @@
           To automatically fill in a title’s name, year, cover art, and format, the app
           contacts our MovieVault metadata service at
           <code>https://movies.vaultstack.eu</code> over HTTPS. This is the only online
-          service the app itself relies on. It is used in two situations: when you scan a
-          barcode, and when you search for a title by name while adding it manually.
+          service the app itself relies on. It is used when you scan a barcode, when you
+          search for a title by name while adding it manually, and — as described below —
+          when metadata improvements are contributed back to the shared catalogue.
         </p>
         <p><strong>What is sent to MovieVault:</strong></p>
         <ul>
@@ -189,6 +192,28 @@
           GDPR: our <strong>legitimate interest</strong> (Art. 6(1)(f)) in providing the
           lookup feature you requested and protecting the service from abuse. We do not use
           this data for advertising or profiling.
+        </p>
+
+        <h3>Contributing metadata improvements</h3>
+        <p>
+          MovieVault also maintains a shared catalogue that improves over time. When you
+          correct a title’s metadata or manually add a title with metadata (for example its
+          name, year, cover art, cast, or disc format), those film/series facts may be
+          contributed back to MovieVault so that future searches and lookups — for you and
+          for other users — return richer, more accurate results.
+        </p>
+        <ul>
+          <li>Only the <strong>metadata facts about the title</strong> are contributed. Your ownership records, your collection list, your watchlist, your watch history, and your identity are never sent.</li>
+          <li>Contributions are tied only to the same <strong>random device identifier</strong> described above, purely to prevent abuse — not to your name, account, or any personal profile.</li>
+          <li>Contributed metadata becomes part of the shared catalogue and may be shown to other DiscVault users in future lookups.</li>
+          <li>Today this contribution is performed by your <strong>DiscVault server</strong> when you make corrections there. A future version of the app may also offer to contribute metadata directly; if that is added, this policy and the in-app settings will be updated accordingly.</li>
+        </ul>
+        <p>
+          Legal basis under the GDPR: our <strong>legitimate interest</strong> (Art.
+          6(1)(f)) in maintaining and improving a shared metadata catalogue. Because
+          contributions are not linked to your identity, they cannot ordinarily be traced
+          back to you; contact <a href="mailto:privacy@discvault.eu">privacy@discvault.eu</a>
+          if you have questions about a specific contribution.
         </p>
 
         <h2>6. Camera</h2>

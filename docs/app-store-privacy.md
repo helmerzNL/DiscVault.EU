@@ -33,6 +33,16 @@ datatypes declareren.
   ontvangt of benadert die niet → geen developer-"collection". (Neem dit wel op
   in het privacybeleid, wat al gebeurd is, maar niet in het privacy-label.)
 
+> **Metadatabijdrage — huidige status (belangrijk voor het label).** MovieVault
+> wordt óók gebruikt om de gedeelde catalogus te verrijken: als je metadata
+> corrigeert of handmatig aanmaakt, gaat die terug naar MovieVault. **In de
+> huidige iOS-app gebeurt dit echter niet vanuit de app zelf** — de app doet
+> richting MovieVault alleen `GET` (search, barcode, movie/person detail). De
+> terugkoppeling wordt nu verzorgd door de **DiscVault-server**. Voor het
+> App-Privacy-label van de *huidige* app-versie verandert er daardoor niets: je
+> declareert alleen wat de app zelf verstuurt (zie §1). Zie §7 voor wat er
+> verandert zodra de app zelf gaat bijdragen.
+
 ---
 
 ## 1. Datatypes die je WÉL declareert (via MovieVault)
@@ -130,6 +140,7 @@ Deze horen bij "Data Not Collected" — vink ze **niet** aan:
 | Contact Info / Location / Contacts / Health / Financial / Browsing / User Content / Diagnostics / Purchases / User ID / Ads | **Not Collected** |
 | Data van sync naar eigen server | **Niet declareren** (jij ontvangt het niet) |
 | Camerabeelden | **Niet declareren** (blijft on-device) |
+| Metadatabijdrage (correcties) | Vandaag **niet declareren** — gebeurt server-side, niet vanuit de app (zie §7) |
 | Tracking / ATT-prompt | **Nee** |
 | Privacy Policy URL | `https://discvault.eu/privacy.html` |
 
@@ -144,3 +155,25 @@ Werk zowel dit document, het privacy-label als
 - accounts/inlog in de app toevoegt (dan mogelijk **User ID**/**Contact Info**),
 - een nieuwe externe dienst aanroept,
 - of advertenties/tracking toevoegt (dan ATT + Tracking = Yes).
+
+---
+
+## 7. Toekomst: directe metadatabijdrage vanuit de app
+
+Zodra de app zelf metadata gaat bijdragen aan MovieVault (in plaats van alleen de
+DiscVault-server), verandert het label. Loop dit dan na:
+
+- **Usage Data** — breid het doel/omvang uit: naast opgevraagde zoektermen stuurt
+  de app dan ook door de gebruiker ingevoerde/gecorrigeerde titelgegevens.
+- **User Content** — overweeg dit datatype aan te zetten (categorie "Other User
+  Content"): de bijgedragen metadata is door de gebruiker aangeleverde content
+  die wordt opgeslagen en met andere gebruikers gedeeld. Blijft **niet gekoppeld
+  aan identiteit** en **geen tracking**, mits alleen de willekeurige toestel-ID
+  wordt meegestuurd.
+- **Consent/opt-out** — als er een opt-in of opt-out-instelling komt, beschrijf die
+  in de app en in [`privacy.html`](../privacy.html); een opt-in versterkt de
+  AVG-grondslag (toestemming i.p.v. gerechtvaardigd belang).
+- Houd het [privacybeleid](../privacy.html) (§5, subsectie "Contributing metadata
+  improvements") en de [voorwaarden](../terms.html) (§4.1, licentieverlening) in
+  lijn met het daadwerkelijke gedrag.
+

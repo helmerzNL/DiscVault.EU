@@ -1412,6 +1412,12 @@ code {
   margin: 2.1rem 0 0.6rem;
 }
 
+.legal h3 {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin: 1.4rem 0 0.4rem;
+}
+
 .legal p {
   color: var(--text-muted);
   max-width: 74ch;
