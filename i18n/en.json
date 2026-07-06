@@ -129,6 +129,8 @@
   "s_letterboxd.body": "Automatically sync your watch history and ratings with Letterboxd, so your collection manager and film diary always stay in step.",
   "beta263.tag": "Now in beta · v26.3",
   "beta263.badge": "New in 26.3 · Beta",
+  "s_shelflabel.title": "Shelf label printing",
+  "s_shelflabel.body": "Print tidy shelf labels for your discs, boxes, and shelves — with title, format, and a scannable code — so every title is easy to find and put back in the right place.",
   "s_location.badge": "Planned for 26",
   "s_location.title": "Shelf &amp; location tracking",
   "s_location.body": "Record where each disc physically lives — shelf, box, or room. Never dig through the whole collection again when you know exactly where a title is stored.",
