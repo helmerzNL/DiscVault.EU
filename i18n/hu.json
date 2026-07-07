@@ -163,7 +163,7 @@
   "install.eyebrow": "DiscVault 26 telepítése",
   "install.h2": "Telepítse a DiscVault 26-ot, vagy maradjon a Legacy release-en.",
   "install.stable.title": "DiscVault Legacy",
-  "install.stable.body": "Maradjon a régi Legacy versionön a legacy image használatával:",
+  "install.stable.body": "A DiscVault Legacy többé nem kap frissítéseket, és 2026. október 1-jén eléri az élettartama végét. E dátum után új telepítés/letöltés már nem lesz lehetséges, és a legacy Docker image eltávolításra kerül.",
   "install.beta.title": "v26 image",
   "install.beta.body": "Telepítse a DiscVault 26-ot a v26 image segítségével. Ez az aktuális DiscVault 26 release.",
   "install.unraid.title": "Unraid template",

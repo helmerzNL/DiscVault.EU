@@ -164,7 +164,7 @@
   "install.eyebrow": "Installa DiscVault 26",
   "install.h2": "Installa DiscVault 26 o resta sulla release Legacy.",
   "install.stable.title": "DiscVault Legacy",
-  "install.stable.body": "Resta sulla vecchia versione Legacy con l'immagine legacy:",
+  "install.stable.body": "DiscVault Legacy non riceverà ulteriori aggiornamenti e raggiungerà la fine del ciclo di vita il 1° ottobre 2026. Dopo tale data, nuove installazioni/download non saranno più possibili e l'immagine Docker legacy verrà rimossa.",
   "install.beta.title": "Immagine v26",
   "install.beta.body": "Installa DiscVault 26 con l'immagine v26. Questa e la release DiscVault 26 attuale.",
   "install.unraid.title": "Template Unraid",
