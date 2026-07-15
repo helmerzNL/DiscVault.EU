@@ -3,7 +3,7 @@ name: Marketing site checks
 on:
   pull_request:
   push:
-    branches: ['master', 'modernize-marketing-site']
+    branches: ['master']
 
 permissions:
   contents: read
@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 24
+          package-manager-cache: false
 
       - name: Enable locked pnpm
         run: corepack install --global pnpm@11.13.0
