@@ -502,15 +502,6 @@ h3 {
   font-weight: 700;
 }
 
-.temporary-note {
-  display: inline-block;
-  padding: 0.65rem 0.8rem;
-  border-left: 3px solid var(--dv-warning);
-  background: var(--dv-surface-1);
-  color: var(--dv-text-2);
-  font-size: 0.88rem;
-}
-
 .showcase-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -535,23 +526,12 @@ h3 {
 }
 
 .shot img {
+  height: auto;
   border-radius: 0.75rem;
 }
 
 .shot-phone {
   grid-column: span 2;
-}
-
-.shot-phone img {
-  aspect-ratio: 49 / 100;
-  object-fit: cover;
-  object-position: top;
-}
-
-.shot-desktop img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: top;
 }
 
 .shot figcaption {

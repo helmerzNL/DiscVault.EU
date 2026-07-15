@@ -74,7 +74,6 @@ const locales = Object.fromEntries(
 
 const referenceShape = shape(locales.en);
 const localizedCopyPaths = [
-  'showcase.temporary',
   'trust.noTrackingTitle',
   'trust.noTrackingBody',
   'trust.controlTitle',
