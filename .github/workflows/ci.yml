@@ -1,0 +1,40 @@
+name: Marketing site checks
+
+on:
+  pull_request:
+  push:
+    branches: ['master', 'modernize-marketing-site']
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Enable locked pnpm
+        run: corepack install --global pnpm@11.13.0
+
+      - name: Install dependencies
+        run: corepack pnpm install --frozen-lockfile
+
+      - name: Run format, type, content, build, link and route checks
+        run: corepack pnpm check
+        env:
+          VERSION_GUARD_BASE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || 'HEAD^' }}
+
+      - name: Install project Chromium
+        run: corepack pnpm exec playwright install --with-deps chromium
+
+      - name: Run Lighthouse budgets
+        run: corepack pnpm lighthouse

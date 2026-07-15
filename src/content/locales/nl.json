@@ -1,0 +1,123 @@
+{
+  "locale": "nl",
+  "languageName": "Nederlands",
+  "seo": {
+    "title": "DiscVault. Gebouwd voor verzamelaars.",
+    "description": "Gebruik je camera om barcodes te scannen en haal automatisch filmmetadata en coverafbeeldingen op. De app draait volledig op zichzelf — geen server nodig. Beheer je collectie direct op je apparaat zonder de DiscVault-backend."
+  },
+  "nav": {
+    "product": "Functies",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Privacy",
+    "docs": "Docs",
+    "menu": "Menu",
+    "language": "Talen"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Gebouwd voor verzamelaars.",
+    "title": "DiscVault 26 is er.",
+    "accent": "Gebouwd voor de volgende plank.",
+    "lead": "Gebouwd voor mensen met echte planken, echte stapels en echte edities.",
+    "testflight": "TestFlight",
+    "selfHosted": "Installeer v26"
+  },
+  "routes": {
+    "eyebrow": "Installatie",
+    "heading": "Native gebouwd voor iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Werkt zelfstandig",
+      "body": "De app draait volledig op zichzelf — geen server nodig. Beheer je collectie direct op je apparaat zonder de DiscVault-backend.",
+      "points": [
+        "Gebruik je camera om barcodes te scannen en haal automatisch filmmetadata en coverafbeeldingen op.",
+        "Zoek op titel, genre of regisseur en filter op formaat in een overzichtelijke collectieweergave."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 is er.",
+      "body": "DiscVault 26 kan nu geïnstalleerd en gebruikt worden. Het brengt een nieuwe desktop-first bibliotheek, rijkere detailpagina's, PostgreSQL-fundamenten, plugins, migratietools en betere admin-controls voor verzamelaars die hun fysieke media self-hosted willen catalogiseren.",
+      "points": [
+        "DiscVault 26 voegt invite-only flows, eigenaar/admin-tools, Basic en Advanced RBAC, rolsimulatie, auditweergaven, API-toegang en MCP-ready integraties toe.",
+        "Beheer metadatabronnen, receivers, importbronnen, digitale mediabronnen, pluginpakketten, healthchecks en achtergrondtaken vanuit het adminpaneel."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Functies",
+    "heading": "Gebouwd voor mensen met echte planken, echte stapels en echte edities.",
+    "items": [
+      {
+        "title": "Scannen en verrijken",
+        "body": "Gebruik je camera om barcodes te scannen en haal automatisch filmmetadata en coverafbeeldingen op."
+      },
+      {
+        "title": "Filteren en zoeken",
+        "body": "Zoek op titel, genre of regisseur en filter op formaat in een overzichtelijke collectieweergave."
+      },
+      {
+        "title": "Nieuwe bibliotheekervaring",
+        "body": "Blader door posters, schakel naar lijst- of detailweergave, filter op formaat, open containers en boxsets, en houd grote collecties snel."
+      },
+      {
+        "title": "Rijkere film- en containerpagina's",
+        "body": "Detailpagina's bieden nu ruimte voor backdrops, posters, video's, metadata, collectiekoppelingen, bekeken-status en boxsetinhoud."
+      },
+      {
+        "title": "Platform rond plugins",
+        "body": "Beheer metadatabronnen, receivers, importbronnen, digitale mediabronnen, pluginpakketten, healthchecks en achtergrondtaken vanuit het adminpaneel."
+      },
+      {
+        "title": "Admin, RBAC, API en MCP",
+        "body": "DiscVault 26 voegt invite-only flows, eigenaar/admin-tools, Basic en Advanced RBAC, rolsimulatie, auditweergaven, API-toegang en MCP-ready integraties toe."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Schermafbeeldingen",
+    "heading": "Nieuwe bibliotheekervaring",
+    "temporary": "Tijdelijke productbeelden — de definitieve beelden voor iPhone, iPad en desktop vervangen deze vóór de lancering.",
+    "mobileLibrary": "DiscVault 26 bibliotheek",
+    "mobileAdd": "Film toevoegen",
+    "mobileDetail": "Detailpagina",
+    "desktopLibrary": "DiscVault 26 bibliotheek",
+    "desktopDetail": "Detailpagina"
+  },
+  "trust": {
+    "eyebrow": "Privacy",
+    "heading": "Werkt zelfstandig",
+    "body": "De app draait volledig op zichzelf — geen server nodig. Beheer je collectie direct op je apparaat zonder de DiscVault-backend.",
+    "noTrackingTitle": "Geen tracking",
+    "noTrackingBody": "Geen analytics, advertenties of tracking door derden.",
+    "controlTitle": "Jouw data, jouw keuze",
+    "controlBody": "Bewaar je bibliotheek op je apparaat of op een DiscVault-server die je zelf beheert."
+  },
+  "comparison": {
+    "eyebrow": "Kies je route",
+    "heading": "Gebouwd voor mensen met echte planken, echte stapels en echte edities.",
+    "route": "Route",
+    "bestFor": "Het beste voor",
+    "setup": "Installatie",
+    "iosBest": "De app draait volledig op zichzelf — geen server nodig. Beheer je collectie direct op je apparaat zonder de DiscVault-backend.",
+    "iosSetup": "Installeer de TestFlight-bèta. Geen server nodig.",
+    "selfBest": "DiscVault 26 kan nu geïnstalleerd en gebruikt worden. Het brengt een nieuwe desktop-first bibliotheek, rijkere detailpagina's, PostgreSQL-fundamenten, plugins, migratietools en betere admin-controls voor verzamelaars die hun fysieke media self-hosted willen catalogiseren.",
+    "selfSetup": "Volg de actuele installatiehandleiding in DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Community",
+    "heading": "Hulp nodig of wil je updates volgen?",
+    "discord": "Word lid van Discord",
+    "issues": "Probleem melden",
+    "support": "Supportthread",
+    "finalTitle": "DiscVault. Gebouwd voor verzamelaars."
+  },
+  "footer": {
+    "tagline": "DiscVault. Gebouwd voor verzamelaars.",
+    "source": "Broncode op GitHub",
+    "legacy": "Migratie van oudere versie",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "support": "Supportthread"
+  }
+}

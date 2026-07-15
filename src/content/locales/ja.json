@@ -1,0 +1,123 @@
+{
+  "locale": "ja",
+  "languageName": "日本語",
+  "seo": {
+    "title": "DiscVault。コレクターのために構築。",
+    "description": "カメラでバーコードをスキャンし、映画メタデータとカバー画像を自動取得します。 アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。"
+  },
+  "nav": {
+    "product": "機能",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "プライバシー",
+    "docs": "Docs",
+    "menu": "メニュー",
+    "language": "言語"
+  },
+  "hero": {
+    "eyebrow": "DiscVault。コレクターのために構築。",
+    "title": "DiscVault 26 が登場しました。",
+    "accent": "次の棚のために構築。",
+    "lead": "実際の棚、実際の山、実際のエディションを持つコレクターのために作られています。",
+    "testflight": "TestFlight",
+    "selfHosted": "v26 をインストール"
+  },
+  "routes": {
+    "eyebrow": "インストール",
+    "heading": "iOS 向けにネイティブ設計",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "単体で動作",
+      "body": "アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。",
+      "points": [
+        "カメラでバーコードをスキャンし、映画メタデータとカバー画像を自動取得します。",
+        "タイトル、ジャンル、監督で検索し、形式で絞り込めます。"
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 が登場しました。",
+      "body": "DiscVault 26 は今すぐインストールして利用できます。新しい desktop-first library、より詳しい detail pages、PostgreSQL foundation、plugins、migration tools、そして self-hosted の物理メディア catalog 向け admin controls を備えています。",
+      "points": [
+        "DiscVault 26 は、招待専用フロー、所有者/管理者ツール、Basic/Advanced RBAC、ロールシミュレーション、監査ビュー、API アクセス、MCP 対応統合を追加します。",
+        "管理エリアから、メタデータソース、レシーバー、インポート元、デジタルメディアソース、プラグインパッケージ、ヘルスチェック、バックグラウンドジョブを管理できます。"
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "機能",
+    "heading": "実際の棚、実際の山、実際のエディションを持つコレクターのために作られています。",
+    "items": [
+      {
+        "title": "スキャンして強化",
+        "body": "カメラでバーコードをスキャンし、映画メタデータとカバー画像を自動取得します。"
+      },
+      {
+        "title": "フィルターと検索",
+        "body": "タイトル、ジャンル、監督で検索し、形式で絞り込めます。"
+      },
+      {
+        "title": "新しいライブラリ体験",
+        "body": "ポスターを閲覧し、リストまたは詳細ビューに切り替え、形式で絞り込み、コンテナやボックスセットを開き、大規模コレクションでも高速な画面を保ちます。"
+      },
+      {
+        "title": "より豊かな映画ページとコンテナページ",
+        "body": "詳細ページには、背景画像、ポスター、動画、メタデータ、コレクション所属、視聴状態、ボックスセット内容を表示できます。"
+      },
+      {
+        "title": "プラグイン中心のプラットフォーム",
+        "body": "管理エリアから、メタデータソース、レシーバー、インポート元、デジタルメディアソース、プラグインパッケージ、ヘルスチェック、バックグラウンドジョブを管理できます。"
+      },
+      {
+        "title": "管理、RBAC、API、MCP",
+        "body": "DiscVault 26 は、招待専用フロー、所有者/管理者ツール、Basic/Advanced RBAC、ロールシミュレーション、監査ビュー、API アクセス、MCP 対応統合を追加します。"
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "スクリーンショット",
+    "heading": "新しいライブラリ体験",
+    "temporary": "製品画像は仮のものです — 発売前に iPhone、iPad、desktop の最終画像に置き換わります。",
+    "mobileLibrary": "DiscVault 26 ライブラリ",
+    "mobileAdd": "映画を追加",
+    "mobileDetail": "詳細ページ",
+    "desktopLibrary": "DiscVault 26 ライブラリ",
+    "desktopDetail": "詳細ページ"
+  },
+  "trust": {
+    "eyebrow": "プライバシー",
+    "heading": "単体で動作",
+    "body": "アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。",
+    "noTrackingTitle": "トラッキングなし",
+    "noTrackingBody": "分析、広告、サードパーティによるトラッキングは一切ありません。",
+    "controlTitle": "あなたのデータ、あなたの選択",
+    "controlBody": "ライブラリをデバイス上、または自分で管理する DiscVault サーバー上に保管できます。"
+  },
+  "comparison": {
+    "eyebrow": "ルートを選択",
+    "heading": "実際の棚、実際の山、実際のエディションを持つコレクターのために作られています。",
+    "route": "ルート",
+    "bestFor": "おすすめの用途",
+    "setup": "セットアップ",
+    "iosBest": "アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。",
+    "iosSetup": "TestFlight ベータ版をインストールしてください。サーバーは不要です。",
+    "selfBest": "DiscVault 26 は今すぐインストールして利用できます。新しい desktop-first library、より詳しい detail pages、PostgreSQL foundation、plugins、migration tools、そして self-hosted の物理メディア catalog 向け admin controls を備えています。",
+    "selfSetup": "DiscVault Docs の最新のインストールガイドに従ってください。"
+  },
+  "community": {
+    "eyebrow": "コミュニティ",
+    "heading": "サポートが必要ですか、更新を追跡したいですか?",
+    "discord": "Discord に参加",
+    "issues": "Issue を報告",
+    "support": "サポートスレッド",
+    "finalTitle": "DiscVault。コレクターのために構築。"
+  },
+  "footer": {
+    "tagline": "DiscVault。コレクターのために構築。",
+    "source": "GitHub のソース",
+    "legacy": "レガシー移行",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "support": "サポートスレッド"
+  }
+}

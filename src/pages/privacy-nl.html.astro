@@ -1,0 +1,15 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import body from '../content/legal/privacy-nl.html?raw';
+---
+
+<LegalLayout
+  locale="nl"
+  canonicalPath="/privacy-nl.html"
+  title="DiscVault — Privacyverklaring"
+  description="Privacyverklaring voor de DiscVault iOS-app: een privacy-first, self-hosted beheerder voor je fysieke schijvencollectie. Lees welke gegevens op je toestel blijven, wat naar je eigen server gaat en hoe metadata-lookups werken."
+  eyebrow="Privacy"
+  heading="DiscVault Privacyverklaring"
+  lead="DiscVault is privacy-first gebouwd. Je collectie staat op je toestel en, als je dat wilt, op een server die je zelf host. Deze verklaring legt precies uit wat de DiscVault iOS-app wel en niet met je gegevens doet."
+  body={body}
+/>

@@ -1,0 +1,123 @@
+{
+  "locale": "it",
+  "languageName": "Italiano",
+  "seo": {
+    "title": "DiscVault. Creato per collezionisti.",
+    "description": "Usa la fotocamera per scansionare codici a barre e ottenere automaticamente metadati dei film e copertine. L'app funziona completamente da sola — nessun server richiesto. Gestisci la tua collezione direttamente sul dispositivo, senza il backend DiscVault."
+  },
+  "nav": {
+    "product": "Funzionalità",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Privacy",
+    "docs": "Docs",
+    "menu": "Menu",
+    "language": "Lingue"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Creato per collezionisti.",
+    "title": "DiscVault 26 e arrivato.",
+    "accent": "Creato per il prossimo scaffale.",
+    "lead": "Creato per persone con scaffali reali, pile reali ed edizioni reali.",
+    "testflight": "TestFlight",
+    "selfHosted": "Installa v26"
+  },
+  "routes": {
+    "eyebrow": "Installazione",
+    "heading": "Sviluppata in modo nativo per iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Funziona in autonomia",
+      "body": "L'app funziona completamente da sola — nessun server richiesto. Gestisci la tua collezione direttamente sul dispositivo, senza il backend DiscVault.",
+      "points": [
+        "Usa la fotocamera per scansionare codici a barre e ottenere automaticamente metadati dei film e copertine.",
+        "Cerca per titolo, genere o regista e filtra per formato in una vista collezione pulita."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 e arrivato.",
+      "body": "DiscVault 26 puo essere installato e usato oggi. Porta una libreria desktop-first, pagine dettaglio piu ricche, base PostgreSQL, plugin, strumenti di migrazione e controlli admin migliori per cataloghi self-hosted.",
+      "points": [
+        "DiscVault 26 aggiunge flussi su invito, strumenti owner/admin, RBAC Basic e Advanced, simulazione ruoli, audit, accesso API e integrazioni pronte per MCP.",
+        "Gestisci fonti metadata, receiver, fonti import, fonti media digitali, pacchetti plugin, health check e job in background dall area admin."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Funzionalità",
+    "heading": "Creato per persone con scaffali reali, pile reali ed edizioni reali.",
+    "items": [
+      {
+        "title": "Scansiona e arricchisci",
+        "body": "Usa la fotocamera per scansionare codici a barre e ottenere automaticamente metadati dei film e copertine."
+      },
+      {
+        "title": "Filtra e cerca",
+        "body": "Cerca per titolo, genere o regista e filtra per formato in una vista collezione pulita."
+      },
+      {
+        "title": "Nuova esperienza libreria",
+        "body": "Sfoglia poster, passa a lista o dettaglio, filtra per formato, apri container e box set, e mantieni veloce l interfaccia su collezioni grandi."
+      },
+      {
+        "title": "Pagine film e container piu ricche",
+        "body": "Le pagine dettaglio ora includono backdrops, poster, video, metadati, appartenenza alla collezione, stato visto e contenuti dei box set."
+      },
+      {
+        "title": "Piattaforma centrata sui plugin",
+        "body": "Gestisci fonti metadata, receiver, fonti import, fonti media digitali, pacchetti plugin, health check e job in background dall area admin."
+      },
+      {
+        "title": "Admin, RBAC, API e MCP",
+        "body": "DiscVault 26 aggiunge flussi su invito, strumenti owner/admin, RBAC Basic e Advanced, simulazione ruoli, audit, accesso API e integrazioni pronte per MCP."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Screenshot",
+    "heading": "Nuova esperienza libreria",
+    "temporary": "Immagini provvisorie del prodotto — le immagini finali per iPhone, iPad e desktop le sostituiranno prima del lancio.",
+    "mobileLibrary": "Libreria DiscVault 26",
+    "mobileAdd": "Aggiungi film",
+    "mobileDetail": "Pagina dettaglio",
+    "desktopLibrary": "Libreria DiscVault 26",
+    "desktopDetail": "Pagina dettaglio"
+  },
+  "trust": {
+    "eyebrow": "Privacy",
+    "heading": "Funziona in autonomia",
+    "body": "L'app funziona completamente da sola — nessun server richiesto. Gestisci la tua collezione direttamente sul dispositivo, senza il backend DiscVault.",
+    "noTrackingTitle": "Nessun tracciamento",
+    "noTrackingBody": "Nessuna analisi, pubblicità o tracciamento di terze parti.",
+    "controlTitle": "I tuoi dati, la tua scelta",
+    "controlBody": "Conserva la tua libreria sul tuo dispositivo o su un server DiscVault che amministri tu."
+  },
+  "comparison": {
+    "eyebrow": "Scegli il tuo percorso",
+    "heading": "Creato per persone con scaffali reali, pile reali ed edizioni reali.",
+    "route": "Percorso",
+    "bestFor": "Ideale per",
+    "setup": "Configurazione",
+    "iosBest": "L'app funziona completamente da sola — nessun server richiesto. Gestisci la tua collezione direttamente sul dispositivo, senza il backend DiscVault.",
+    "iosSetup": "Installa la beta TestFlight. Nessun server richiesto.",
+    "selfBest": "DiscVault 26 puo essere installato e usato oggi. Porta una libreria desktop-first, pagine dettaglio piu ricche, base PostgreSQL, plugin, strumenti di migrazione e controlli admin migliori per cataloghi self-hosted.",
+    "selfSetup": "Segui la guida di installazione attuale su DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Comunità",
+    "heading": "Hai bisogno di aiuto o vuoi seguire gli aggiornamenti?",
+    "discord": "Entra su Discord",
+    "issues": "Segnala un problema",
+    "support": "Thread di supporto",
+    "finalTitle": "DiscVault. Creato per collezionisti."
+  },
+  "footer": {
+    "tagline": "DiscVault. Creato per collezionisti.",
+    "source": "Codice sorgente su GitHub",
+    "legacy": "Migrazione da versioni precedenti",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "support": "Thread di supporto"
+  }
+}

@@ -1,0 +1,56 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { contentByLocale, localePath, type Locale } from '../content/locales';
+
+interface Props {
+  locale: Extract<Locale, 'en' | 'nl'>;
+  canonicalPath: string;
+  title: string;
+  description: string;
+  eyebrow: string;
+  heading: string;
+  lead: string;
+  body: string;
+}
+
+const {
+  locale,
+  canonicalPath,
+  title,
+  description,
+  eyebrow,
+  heading,
+  lead,
+  body,
+} = Astro.props;
+const content = contentByLocale[locale];
+const documentType = canonicalPath.startsWith('/privacy') ? 'privacy' : 'terms';
+const englishPath = `/${documentType}.html`;
+const dutchPath = `/${documentType}-nl.html`;
+---
+
+<BaseLayout
+  content={content}
+  canonicalPath={canonicalPath}
+  title={title}
+  description={description}
+  productSchema={false}
+  alternateLinks={[
+    { locale: 'en', path: englishPath },
+    { locale: 'nl', path: dutchPath },
+  ]}
+  xDefaultPath={englishPath}
+>
+  <Header content={content} locale={locale} homePath={localePath(locale)} />
+  <main id="main">
+    <header class="legal-hero wrap">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{heading}</h1>
+      <p class="lead">{lead}</p>
+    </header>
+    <article class="legal wrap" set:html={body} />
+  </main>
+  <Footer content={content} locale={locale} />
+</BaseLayout>

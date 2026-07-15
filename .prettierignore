@@ -1,0 +1,9 @@
+dist
+node_modules
+docs
+public/legacy/index.html
+public/styles.css
+src/content/legal/*.html
+src/content/locales/*.json
+src/styles/tokens.css
+pnpm-lock.yaml

@@ -1,0 +1,123 @@
+{
+  "locale": "ko",
+  "languageName": "한국어",
+  "seo": {
+    "title": "DiscVault. 수집가를 위해 설계되었습니다.",
+    "description": "카메라로 바코드를 스캔하고 영화 메타데이터와 커버 이미지를 자동으로 가져옵니다. 앱은 완전히 독립적으로 실행되며 서버가 필요 없습니다. DiscVault backend 없이 기기에서 바로 컬렉션을 관리하세요."
+  },
+  "nav": {
+    "product": "기능",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "개인정보",
+    "docs": "Docs",
+    "menu": "메뉴",
+    "language": "언어"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. 수집가를 위해 설계되었습니다.",
+    "title": "DiscVault 26이 도착했습니다.",
+    "accent": "다음 선반을 위해 설계되었습니다.",
+    "lead": "실제 선반, 실제 더미, 실제 에디션을 가진 사람들을 위해 설계되었습니다.",
+    "testflight": "TestFlight",
+    "selfHosted": "v26 설치"
+  },
+  "routes": {
+    "eyebrow": "설치",
+    "heading": "iOS용 네이티브 제작",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "독립 실행",
+      "body": "앱은 완전히 독립적으로 실행되며 서버가 필요 없습니다. DiscVault backend 없이 기기에서 바로 컬렉션을 관리하세요.",
+      "points": [
+        "카메라로 바코드를 스캔하고 영화 메타데이터와 커버 이미지를 자동으로 가져옵니다.",
+        "제목, 장르, 감독으로 검색하고 형식으로 필터링합니다."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26이 도착했습니다.",
+      "body": "DiscVault 26은 지금 설치하고 사용할 수 있습니다. 새로운 desktop-first library, 더 풍부한 detail pages, PostgreSQL foundation, plugins, migration tools, self-hosted 물리 미디어 catalog를 위한 향상된 admin controls를 제공합니다.",
+      "points": [
+        "DiscVault 26은 초대 전용 흐름, 소유자/관리자 도구, Basic 및 Advanced RBAC, 역할 시뮬레이션, 감사 보기, API 액세스, MCP 지원 통합을 추가합니다.",
+        "관리자 영역에서 메타데이터 소스, 수신기, 가져오기 소스, 디지털 미디어 소스, 플러그인 패키지, 상태 점검, 백그라운드 작업을 관리합니다."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "기능",
+    "heading": "실제 선반, 실제 더미, 실제 에디션을 가진 사람들을 위해 설계되었습니다.",
+    "items": [
+      {
+        "title": "스캔 및 보강",
+        "body": "카메라로 바코드를 스캔하고 영화 메타데이터와 커버 이미지를 자동으로 가져옵니다."
+      },
+      {
+        "title": "필터와 검색",
+        "body": "제목, 장르, 감독으로 검색하고 형식으로 필터링합니다."
+      },
+      {
+        "title": "새로운 라이브러리 경험",
+        "body": "포스터를 탐색하고, 목록 또는 상세 보기로 전환하고, 형식별로 필터링하고, 컨테이너와 박스 세트를 열며, 대규모 컬렉션에서도 빠른 인터페이스를 유지합니다."
+      },
+      {
+        "title": "더 풍부한 영화 및 컨테이너 페이지",
+        "body": "상세 페이지에는 배경 이미지, 포스터, 동영상, 메타데이터, 컬렉션 포함 여부, 시청 상태, 박스 세트 내용을 담을 수 있습니다."
+      },
+      {
+        "title": "플러그인 중심 플랫폼",
+        "body": "관리자 영역에서 메타데이터 소스, 수신기, 가져오기 소스, 디지털 미디어 소스, 플러그인 패키지, 상태 점검, 백그라운드 작업을 관리합니다."
+      },
+      {
+        "title": "관리, RBAC, API, MCP",
+        "body": "DiscVault 26은 초대 전용 흐름, 소유자/관리자 도구, Basic 및 Advanced RBAC, 역할 시뮬레이션, 감사 보기, API 액세스, MCP 지원 통합을 추가합니다."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "스크린샷",
+    "heading": "새로운 라이브러리 경험",
+    "temporary": "제품 이미지는 임시입니다 — 출시 전에 최종 iPhone, iPad, desktop 이미지로 교체됩니다.",
+    "mobileLibrary": "DiscVault 26 라이브러리",
+    "mobileAdd": "영화 추가",
+    "mobileDetail": "상세 페이지",
+    "desktopLibrary": "DiscVault 26 라이브러리",
+    "desktopDetail": "상세 페이지"
+  },
+  "trust": {
+    "eyebrow": "개인정보",
+    "heading": "독립 실행",
+    "body": "앱은 완전히 독립적으로 실행되며 서버가 필요 없습니다. DiscVault backend 없이 기기에서 바로 컬렉션을 관리하세요.",
+    "noTrackingTitle": "추적 없음",
+    "noTrackingBody": "분석, 광고, 제3자 추적이 전혀 없습니다.",
+    "controlTitle": "당신의 데이터, 당신의 선택",
+    "controlBody": "라이브러리를 기기에 보관하거나 직접 관리하는 DiscVault 서버에 보관하세요."
+  },
+  "comparison": {
+    "eyebrow": "경로를 선택하세요",
+    "heading": "실제 선반, 실제 더미, 실제 에디션을 가진 사람들을 위해 설계되었습니다.",
+    "route": "경로",
+    "bestFor": "적합한 대상",
+    "setup": "설정",
+    "iosBest": "앱은 완전히 독립적으로 실행되며 서버가 필요 없습니다. DiscVault backend 없이 기기에서 바로 컬렉션을 관리하세요.",
+    "iosSetup": "TestFlight 베타를 설치하세요. 서버가 필요 없습니다.",
+    "selfBest": "DiscVault 26은 지금 설치하고 사용할 수 있습니다. 새로운 desktop-first library, 더 풍부한 detail pages, PostgreSQL foundation, plugins, migration tools, self-hosted 물리 미디어 catalog를 위한 향상된 admin controls를 제공합니다.",
+    "selfSetup": "DiscVault Docs의 최신 설치 가이드를 따르세요."
+  },
+  "community": {
+    "eyebrow": "커뮤니티",
+    "heading": "도움이 필요하거나 업데이트를 따라가고 싶으신가요?",
+    "discord": "Discord 참여",
+    "issues": "Issue 보고",
+    "support": "지원 스레드",
+    "finalTitle": "DiscVault. 수집가를 위해 설계되었습니다."
+  },
+  "footer": {
+    "tagline": "DiscVault. 수집가를 위해 설계되었습니다.",
+    "source": "GitHub 소스",
+    "legacy": "레거시 마이그레이션",
+    "privacy": "개인정보",
+    "terms": "약관",
+    "support": "지원 스레드"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  ".github/workflows/",
+  ".githooks/",
+  ".prettierignore",
+  ".prettierrc.json",
+  "astro.config.mjs",
+  "package.json",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "public/",
+  "scripts/",
+  "src/",
+  "tsconfig.json"
+]

@@ -1,0 +1,54 @@
+---
+const docsUrl = 'https://docs.discvault.eu/';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiscVault documentation</title>
+    <meta
+      name="description"
+      content="DiscVault help has moved to the documentation site."
+    />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content={`0;url=${docsUrl}`} />
+    <link rel="canonical" href={docsUrl} />
+    <style>
+      :root {
+        color-scheme: dark light;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      body {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        margin: 0;
+        background: #090f1a;
+        color: #eaf0f7;
+      }
+      main {
+        width: min(34rem, calc(100% - 2rem));
+        text-align: center;
+      }
+      a {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 0.7rem;
+        background: #2a6fd6;
+        color: #fff;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>DiscVault help has moved</h1>
+      <p>Continue to the stable DiscVault documentation landing page.</p>
+      <a href={docsUrl}>Open DiscVault Docs</a>
+    </main>
+  </body>
+</html>

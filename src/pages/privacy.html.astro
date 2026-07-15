@@ -1,0 +1,15 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import body from '../content/legal/privacy.html?raw';
+---
+
+<LegalLayout
+  locale="en"
+  canonicalPath="/privacy.html"
+  title="DiscVault — Privacy Policy"
+  description="Privacy Policy for the DiscVault iOS app: a privacy-first, self-hosted physical disc collection manager. Learn what data stays on your device, what goes to your own server, and how metadata lookups work."
+  eyebrow="Privacy"
+  heading="DiscVault Privacy Policy"
+  lead="DiscVault is built privacy-first. Your collection lives on your device and, if you choose, on a server you host yourself. This policy explains exactly what the DiscVault iOS app does and does not do with your data."
+  body={body}
+/>

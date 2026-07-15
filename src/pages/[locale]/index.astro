@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MarketingPage from '../../components/MarketingPage.astro';
+import {
+  contentByLocale,
+  localeCodes,
+  localePath,
+  type Locale,
+} from '../../content/locales';
+
+export function getStaticPaths() {
+  return localeCodes
+    .filter((locale) => locale !== 'en')
+    .map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Exclude<Locale, 'en'>;
+const content = contentByLocale[locale];
+const path = localePath(locale);
+---
+
+<BaseLayout content={content} canonicalPath={path}>
+  <MarketingPage content={content} locale={locale} homePath={path} />
+</BaseLayout>

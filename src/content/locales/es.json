@@ -1,0 +1,123 @@
+{
+  "locale": "es",
+  "languageName": "Español",
+  "seo": {
+    "title": "DiscVault. Creado para coleccionistas.",
+    "description": "Usa tu cámara para escanear códigos de barras y obtener automáticamente metadatos de películas y portadas. La app funciona completamente por sí sola — sin servidor. Gestiona tu colección directamente en tu dispositivo, sin el backend de DiscVault."
+  },
+  "nav": {
+    "product": "Funciones",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Privacidad",
+    "docs": "Docs",
+    "menu": "Menú",
+    "language": "Idiomas"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Creado para coleccionistas.",
+    "title": "DiscVault 26 esta aqui.",
+    "accent": "Creado para la proxima estanteria.",
+    "lead": "Creado para personas con estantes reales, pilas reales y ediciones reales.",
+    "testflight": "TestFlight",
+    "selfHosted": "Instalar v26"
+  },
+  "routes": {
+    "eyebrow": "Instalación",
+    "heading": "Creada de forma nativa para iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Funciona de forma autónoma",
+      "body": "La app funciona completamente por sí sola — sin servidor. Gestiona tu colección directamente en tu dispositivo, sin el backend de DiscVault.",
+      "points": [
+        "Usa tu cámara para escanear códigos de barras y obtener automáticamente metadatos de películas y portadas.",
+        "Busca por título, género o director y filtra por formato en una vista de colección limpia."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 esta aqui.",
+      "body": "DiscVault 26 ya se puede instalar y usar. Trae una biblioteca desktop-first, paginas de detalle mas completas, base PostgreSQL, plugins, herramientas de migracion y mejores controles admin para catalogos self-hosted de medios fisicos.",
+      "points": [
+        "DiscVault 26 agrega flujos por invitacion, herramientas owner/admin, RBAC Basic y Advanced, simulacion de roles, auditoria, acceso API e integraciones listas para MCP.",
+        "Gestiona fuentes de metadatos, receptores, fuentes de importacion, fuentes multimedia digitales, paquetes de plugins, comprobaciones de salud y trabajos en segundo plano desde admin."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Funciones",
+    "heading": "Creado para personas con estantes reales, pilas reales y ediciones reales.",
+    "items": [
+      {
+        "title": "Escanear y enriquecer",
+        "body": "Usa tu cámara para escanear códigos de barras y obtener automáticamente metadatos de películas y portadas."
+      },
+      {
+        "title": "Filtrar y buscar",
+        "body": "Busca por título, género o director y filtra por formato en una vista de colección limpia."
+      },
+      {
+        "title": "Nueva experiencia de biblioteca",
+        "body": "Explora posters, cambia a lista o detalle, filtra por formato, abre contenedores y box sets, y conserva una interfaz rapida en colecciones grandes."
+      },
+      {
+        "title": "Paginas de pelicula y contenedor mas ricas",
+        "body": "Las paginas de detalle ahora incluyen backdrops, posters, videos, metadatos, pertenencia a colecciones, estado visto y contenido de box sets."
+      },
+      {
+        "title": "Plataforma centrada en plugins",
+        "body": "Gestiona fuentes de metadatos, receptores, fuentes de importacion, fuentes multimedia digitales, paquetes de plugins, comprobaciones de salud y trabajos en segundo plano desde admin."
+      },
+      {
+        "title": "Admin, RBAC, API y MCP",
+        "body": "DiscVault 26 agrega flujos por invitacion, herramientas owner/admin, RBAC Basic y Advanced, simulacion de roles, auditoria, acceso API e integraciones listas para MCP."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Capturas de pantalla",
+    "heading": "Nueva experiencia de biblioteca",
+    "temporary": "Capturas temporales del producto — las imágenes finales de iPhone, iPad y desktop las sustituirán antes del lanzamiento.",
+    "mobileLibrary": "Biblioteca DiscVault 26",
+    "mobileAdd": "Añadir película",
+    "mobileDetail": "Pagina de detalle",
+    "desktopLibrary": "Biblioteca DiscVault 26",
+    "desktopDetail": "Pagina de detalle"
+  },
+  "trust": {
+    "eyebrow": "Privacidad",
+    "heading": "Funciona de forma autónoma",
+    "body": "La app funciona completamente por sí sola — sin servidor. Gestiona tu colección directamente en tu dispositivo, sin el backend de DiscVault.",
+    "noTrackingTitle": "Sin seguimiento",
+    "noTrackingBody": "Sin análisis, publicidad ni seguimiento de terceros.",
+    "controlTitle": "Tus datos, tu elección",
+    "controlBody": "Conserva tu biblioteca en tu dispositivo o en un servidor DiscVault que administres tú."
+  },
+  "comparison": {
+    "eyebrow": "Elige tu ruta",
+    "heading": "Creado para personas con estantes reales, pilas reales y ediciones reales.",
+    "route": "Ruta",
+    "bestFor": "Ideal para",
+    "setup": "Configuración",
+    "iosBest": "La app funciona completamente por sí sola — sin servidor. Gestiona tu colección directamente en tu dispositivo, sin el backend de DiscVault.",
+    "iosSetup": "Instala la beta de TestFlight. No se necesita servidor.",
+    "selfBest": "DiscVault 26 ya se puede instalar y usar. Trae una biblioteca desktop-first, paginas de detalle mas completas, base PostgreSQL, plugins, herramientas de migracion y mejores controles admin para catalogos self-hosted de medios fisicos.",
+    "selfSetup": "Sigue la guía de instalación actual en DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Comunidad",
+    "heading": "¿Necesitas ayuda o quieres seguir las actualizaciones?",
+    "discord": "Unirse a Discord",
+    "issues": "Informar un problema",
+    "support": "Hilo de soporte",
+    "finalTitle": "DiscVault. Creado para coleccionistas."
+  },
+  "footer": {
+    "tagline": "DiscVault. Creado para coleccionistas.",
+    "source": "Código fuente en GitHub",
+    "legacy": "Migración heredada",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "support": "Hilo de soporte"
+  }
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -eu
+
+corepack pnpm check:quick
+node scripts/version-guard.mjs --staged

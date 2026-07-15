@@ -1,0 +1,49 @@
+{
+  "name": "discvault-marketing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.13.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": "11.13.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "stop": "node scripts/stop.mjs",
+    "brand:build": "node scripts/generate-brand-css.mjs",
+    "brand:check": "node scripts/generate-brand-css.mjs --check",
+    "prebuild": "node scripts/generate-brand-css.mjs --check",
+    "build": "astro build",
+    "preview": "node scripts/serve-dist.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "astro check",
+    "check:locales": "node scripts/check-locales.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:routes": "node scripts/check-critical-routes.mjs",
+    "check:version": "node scripts/version-guard.mjs",
+    "check:quick": "prettier --check . && node scripts/generate-brand-css.mjs --check && node scripts/check-locales.mjs && node scripts/version-guard.mjs",
+    "check": "prettier --check . && node scripts/generate-brand-css.mjs --check && astro check && node scripts/check-locales.mjs && astro build && node scripts/check-links.mjs && node scripts/check-critical-routes.mjs && node scripts/version-guard.mjs",
+    "health": "astro build && node scripts/check-links.mjs && node scripts/check-critical-routes.mjs",
+    "lighthouse": "astro build && node scripts/run-lighthouse.mjs",
+    "hooks:setup": "node scripts/setup-hooks.mjs",
+    "version:set": "node scripts/bump-version.mjs",
+    "release:check": "node scripts/check-release-channel.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "7.0.9",
+    "sharp": "0.35.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "chrome-launcher": "1.2.1",
+    "lighthouse": "12.6.1",
+    "playwright": "1.61.1",
+    "prettier": "3.9.5",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "6.0.3"
+  }
+}
