@@ -48,7 +48,6 @@ export interface MarketingContent {
   showcase: {
     eyebrow: string;
     heading: string;
-    temporary: string;
     mobileLibrary: string;
     mobileAdd: string;
     mobileDetail: string;
