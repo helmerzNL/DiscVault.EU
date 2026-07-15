@@ -1,0 +1,56 @@
+---
+import type { Locale } from '../content/locales';
+import type { MarketingContent } from '../content/types';
+import { DOCS_URL, TESTFLIGHT_URL } from '../config';
+import LocaleSwitcher from './LocaleSwitcher.astro';
+
+interface Props {
+  content: MarketingContent;
+  locale: Locale;
+  homePath: string;
+}
+
+const { content, locale, homePath } = Astro.props;
+const homeAnchor = (anchor: string) => `${homePath}${anchor}`;
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href={homePath} aria-label="DiscVault">
+      <img
+        src="/brand/discvault-logo-transparent.png"
+        width="44"
+        height="44"
+        alt=""
+      />
+      <span>DiscVault</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label={content.nav.product}>
+      <a href={homeAnchor('#product')}>{content.nav.product}</a>
+      <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
+      <a href={homeAnchor('#self-hosted')}>{content.nav.selfHosted}</a>
+      <a href={homeAnchor('#privacy')}>{content.nav.privacy}</a>
+      <a href={DOCS_URL}>{content.nav.docs}</a>
+    </nav>
+
+    <div class="header-tools">
+      <LocaleSwitcher locale={locale} label={content.nav.language} />
+      <div class="header-actions">
+        <a class="button button-compact" href={TESTFLIGHT_URL}>TestFlight</a>
+        <a class="button button-compact" href={DOCS_URL}>Self-hosted</a>
+      </div>
+      <details class="mobile-menu">
+        <summary>{content.nav.menu}</summary>
+        <nav aria-label={content.nav.menu}>
+          <a href={homeAnchor('#product')}>{content.nav.product}</a>
+          <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
+          <a href={homeAnchor('#self-hosted')}>{content.nav.selfHosted}</a>
+          <a href={homeAnchor('#privacy')}>{content.nav.privacy}</a>
+          <a href={DOCS_URL}>{content.nav.docs}</a>
+          <a href={TESTFLIGHT_URL}>TestFlight</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

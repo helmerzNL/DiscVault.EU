@@ -1,0 +1,38 @@
+---
+import {
+  contentByLocale,
+  localeCodes,
+  localePath,
+  type Locale,
+} from '../content/locales';
+
+interface Props {
+  locale: Locale;
+  label: string;
+}
+
+const { locale, label } = Astro.props;
+---
+
+<label class="locale-switcher">
+  <span class="sr-only">{label}</span>
+  <select data-locale-switcher aria-label={label}>
+    {
+      localeCodes.map((code) => (
+        <option value={localePath(code)} selected={code === locale}>
+          {contentByLocale[code].languageName}
+        </option>
+      ))
+    }
+  </select>
+</label>
+
+<script>
+  document.querySelectorAll('[data-locale-switcher]').forEach((switcher) => {
+    switcher.addEventListener('change', (event) => {
+      if (event.currentTarget instanceof HTMLSelectElement) {
+        window.location.assign(event.currentTarget.value);
+      }
+    });
+  });
+</script>

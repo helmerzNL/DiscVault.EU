@@ -1,0 +1,123 @@
+{
+  "locale": "da",
+  "languageName": "Dansk",
+  "seo": {
+    "title": "DiscVault. Bygget til samlere.",
+    "description": "Brug kameraet til at scanne stregkoder og hent automatisk filmmetadata og covers. Appen kører helt på egen hånd — ingen server påkrævet. Administrer din samling direkte på enheden uden DiscVault-backend."
+  },
+  "nav": {
+    "product": "Funktioner",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Privatliv",
+    "docs": "Docs",
+    "menu": "Menu",
+    "language": "Sprog"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Bygget til samlere.",
+    "title": "DiscVault 26 er her.",
+    "accent": "Bygget til den naeste hylde.",
+    "lead": "Bygget til folk med rigtige hylder, rigtige stabler og rigtige udgaver.",
+    "testflight": "TestFlight",
+    "selfHosted": "Installer v26"
+  },
+  "routes": {
+    "eyebrow": "Installation",
+    "heading": "Bygget indbygget til iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Fungerer selvstændigt",
+      "body": "Appen kører helt på egen hånd — ingen server påkrævet. Administrer din samling direkte på enheden uden DiscVault-backend.",
+      "points": [
+        "Brug kameraet til at scanne stregkoder og hent automatisk filmmetadata og covers.",
+        "Søg efter titel, genre eller instruktør og filtrer efter format i en ren samlingsvisning."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 er her.",
+      "body": "DiscVault 26 kan installeres og bruges nu. Den giver et nyt desktop-first bibliotek, rigere detaljesider, PostgreSQL-grundlag, plugins, migreringsværktøjer og bedre admin-kontroller til self-hosted fysiske mediesamlinger.",
+      "points": [
+        "DiscVault 26 tilfojer invite-only flows, owner/admin-vaerktojer, Basic og Advanced RBAC, rollesimulering, auditvisninger, API-adgang og MCP-klare integrationer.",
+        "Administrer metadatakilder, receivers, importkilder, digitale mediekilder, pluginpakker, health checks og baggrundsjobs fra adminomradet."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Funktioner",
+    "heading": "Bygget til folk med rigtige hylder, rigtige stabler og rigtige udgaver.",
+    "items": [
+      {
+        "title": "Scan og berig",
+        "body": "Brug kameraet til at scanne stregkoder og hent automatisk filmmetadata og covers."
+      },
+      {
+        "title": "Filtrer og søg",
+        "body": "Søg efter titel, genre eller instruktør og filtrer efter format i en ren samlingsvisning."
+      },
+      {
+        "title": "Ny biblioteksoplevelse",
+        "body": "Gennemse posters, skift til liste eller detaljevisning, filtrer pa format, abn containers og box sets, og hold interfacet hurtigt pa store samlinger."
+      },
+      {
+        "title": "Rigere film- og containersider",
+        "body": "Detaljesider giver nu plads til backdrops, posters, videoer, metadata, samlingstilknytning, set-status og box set-indhold."
+      },
+      {
+        "title": "Plugincentreret platform",
+        "body": "Administrer metadatakilder, receivers, importkilder, digitale mediekilder, pluginpakker, health checks og baggrundsjobs fra adminomradet."
+      },
+      {
+        "title": "Admin, RBAC, API og MCP",
+        "body": "DiscVault 26 tilfojer invite-only flows, owner/admin-vaerktojer, Basic og Advanced RBAC, rollesimulering, auditvisninger, API-adgang og MCP-klare integrationer."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Skærmbilleder",
+    "heading": "Ny biblioteksoplevelse",
+    "temporary": "Midlertidige produktbilleder — de endelige billeder til iPhone, iPad og desktop erstatter dem før lancering.",
+    "mobileLibrary": "DiscVault 26 bibliotek",
+    "mobileAdd": "Tilføj film",
+    "mobileDetail": "Detaljeside",
+    "desktopLibrary": "DiscVault 26 bibliotek",
+    "desktopDetail": "Detaljeside"
+  },
+  "trust": {
+    "eyebrow": "Privatliv",
+    "heading": "Fungerer selvstændigt",
+    "body": "Appen kører helt på egen hånd — ingen server påkrævet. Administrer din samling direkte på enheden uden DiscVault-backend.",
+    "noTrackingTitle": "Ingen tracking",
+    "noTrackingBody": "Ingen analyse, reklame eller tredjepartstracking.",
+    "controlTitle": "Dine data, dit valg",
+    "controlBody": "Behold dit bibliotek på din enhed eller på en DiscVault-server, du selv administrerer."
+  },
+  "comparison": {
+    "eyebrow": "Vælg din vej",
+    "heading": "Bygget til folk med rigtige hylder, rigtige stabler og rigtige udgaver.",
+    "route": "Rute",
+    "bestFor": "Bedst til",
+    "setup": "Opsætning",
+    "iosBest": "Appen kører helt på egen hånd — ingen server påkrævet. Administrer din samling direkte på enheden uden DiscVault-backend.",
+    "iosSetup": "Installer TestFlight-betaen. Ingen server nødvendig.",
+    "selfBest": "DiscVault 26 kan installeres og bruges nu. Den giver et nyt desktop-first bibliotek, rigere detaljesider, PostgreSQL-grundlag, plugins, migreringsværktøjer og bedre admin-kontroller til self-hosted fysiske mediesamlinger.",
+    "selfSetup": "Følg den aktuelle installationsvejledning i DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Fællesskab",
+    "heading": "Har du brug for hjælp eller vil følge opdateringer?",
+    "discord": "Deltag i Discord",
+    "issues": "Rapportér et problem",
+    "support": "Supporttråd",
+    "finalTitle": "DiscVault. Bygget til samlere."
+  },
+  "footer": {
+    "tagline": "DiscVault. Bygget til samlere.",
+    "source": "Kildekode på GitHub",
+    "legacy": "Migrering af ældre version",
+    "privacy": "Privatliv",
+    "terms": "Vilkår",
+    "support": "Supporttråd"
+  }
+}

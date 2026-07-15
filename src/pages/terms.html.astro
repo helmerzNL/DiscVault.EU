@@ -1,0 +1,15 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import body from '../content/legal/terms.html?raw';
+---
+
+<LegalLayout
+  locale="en"
+  canonicalPath="/terms.html"
+  title="DiscVault — Terms of Use"
+  description="Terms of Use for the DiscVault iOS app, a self-hosted physical disc collection manager. The rules for using the app and the MovieVault metadata service."
+  eyebrow="Legal"
+  heading="DiscVault Terms of Use"
+  lead="These terms apply when you download and use the DiscVault app for iOS and iPadOS. Please read them before using the app."
+  body={body}
+/>

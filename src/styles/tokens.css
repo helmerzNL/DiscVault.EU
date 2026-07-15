@@ -1,0 +1,55 @@
+/*
+ * Generated from Flux76HQ/App-Guidance/docs/branding/apps/discvault/pwa/tokens.json
+ * Revision: 957e28901e0ce54d7bdc297593f716bb9c0fe9fd
+ * Brand: DiscVault Chrome & Blue v3.1
+ * Run "pnpm brand:build" after updating tokens.json.
+ */
+:root {
+  --dv-bg: #090F1A;
+  --dv-surface-1: #111A2A;
+  --dv-surface-2: #1A2438;
+  --dv-surface-3: #243047;
+  --dv-border-subtle: #2B3852;
+  --dv-border: #394863;
+  --dv-text: #EAF0F7;
+  --dv-text-2: #9AA7B8;
+  --dv-text-3: #647082;
+  --dv-platinum: #C7D2DE;
+  --dv-platinum-dim: #8996A6;
+  --dv-success: #34D399;
+  --dv-warning: #FB8C3C;
+  --dv-error: #FF5A52;
+  --dv-info: #22C0DE;
+  --dv-accent: #2A6FD6;
+  --dv-accent-hover: #3C7CE1;
+  --dv-accent-press: #2259B0;
+  --dv-accent-bright: #6CB4FC;
+  --dv-accent-on: #FFFFFF;
+  --dv-sheen: conic-gradient(from 210deg, #7EB9EB, #D6CEFA, #EDC8F0, #F9F6F6, #7EE2C6, #4C93E4, #3C7CE1, #7EB9EB);
+  --dv-shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px rgba(0,0,0,.4);
+  --dv-theme-color: #090F1A;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --dv-bg: #F4F7FB;
+  --dv-surface-1: #FFFFFF;
+  --dv-surface-2: #EDF1F7;
+  --dv-surface-3: #E1E8F1;
+  --dv-border-subtle: #E4EAF2;
+  --dv-border: #D0D9E5;
+  --dv-text: #0E141F;
+  --dv-text-2: #4A5666;
+  --dv-text-3: #7C8798;
+  --dv-platinum: #6B7787;
+  --dv-platinum-dim: #9AA6B4;
+  --dv-success: #0E9F6E;
+  --dv-warning: #C2540B;
+  --dv-error: #DC2626;
+  --dv-info: #0E7C93;
+    --dv-accent-bright: #1F5FBF;
+    --dv-sheen: conic-gradient(from 210deg, #5E9AD0, #B3A8E4, #D6A8DC, #E8E4EE, #5CC4A8, #3B7BC4, #2A6FD6, #5E9AD0);
+    --dv-shadow: 0 1px 2px rgba(20,30,45,.06), 0 12px 32px rgba(30,60,110,.10);
+    --dv-theme-color: #F4F7FB;
+  }
+}

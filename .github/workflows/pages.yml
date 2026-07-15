@@ -1,8 +1,8 @@
-name: Deploy Website to GitHub Pages
+name: Deploy stable website to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ['master']
   workflow_dispatch:
 
 permissions:
@@ -11,27 +11,54 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-stable
   cancel-in-progress: true
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Enable locked pnpm
+        run: corepack install --global pnpm@11.13.0
+
+      - name: Install dependencies
+        run: corepack pnpm install --frozen-lockfile
+
+      - name: Validate stable version
+        run: |
+          node -e "const v=require('node:fs').readFileSync('VERSION','utf8').trim();if(!/^[0-9]+\.[0-9]+\.[0-9]+$/.test(v))throw new Error('Pages deploys stable versions only: '+v)"
+
+      - name: Validate and build
+        run: corepack pnpm check
+        env:
+          VERSION_GUARD_BASE: HEAD^
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload dist artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: .
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

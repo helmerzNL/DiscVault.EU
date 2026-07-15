@@ -1,0 +1,123 @@
+{
+  "locale": "en",
+  "languageName": "English",
+  "seo": {
+    "title": "DiscVault. Built for collectors.",
+    "description": "Use your camera to scan barcodes, then automatically pull movie metadata and cover art. The app runs completely on its own — no server required. Manage your collection right on your device without the DiscVault backend."
+  },
+  "nav": {
+    "product": "Features",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Privacy",
+    "docs": "Docs",
+    "menu": "Menu",
+    "language": "Languages"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Built for collectors.",
+    "title": "DiscVault 26 is here.",
+    "accent": "Built for the next shelf.",
+    "lead": "Built for people with real shelves, real stacks, and real editions.",
+    "testflight": "TestFlight",
+    "selfHosted": "Install v26"
+  },
+  "routes": {
+    "eyebrow": "Install",
+    "heading": "Built natively for iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Works standalone",
+      "body": "The app runs completely on its own — no server required. Manage your collection right on your device without the DiscVault backend.",
+      "points": [
+        "Use your camera to scan barcodes, then automatically pull movie metadata and cover art.",
+        "Search by title, genre, or director and filter by format in a clean collection view."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 is here.",
+      "body": "DiscVault 26 can be installed and used today. It brings a new desktop-first library, richer detail pages, PostgreSQL foundations, plugins, migration tools, and better admin controls for collectors who want to keep their physical media catalog self-hosted.",
+      "points": [
+        "DiscVault 26 adds invite-only flows, owner/admin tools, Basic and Advanced RBAC, role simulation, audit views, API access, and MCP-ready integrations.",
+        "Manage metadata sources, receivers, import sources, digital media sources, plugin packages, health checks, and background plugin jobs from the admin area."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Features",
+    "heading": "Built for people with real shelves, real stacks, and real editions.",
+    "items": [
+      {
+        "title": "Scan and enrich",
+        "body": "Use your camera to scan barcodes, then automatically pull movie metadata and cover art."
+      },
+      {
+        "title": "Filter and search",
+        "body": "Search by title, genre, or director and filter by format in a clean collection view."
+      },
+      {
+        "title": "New library experience",
+        "body": "Browse posters, switch to list or detail views, filter by format, jump into containers and box sets, and keep the interface fast on large collections."
+      },
+      {
+        "title": "Richer movie and container pages",
+        "body": "Detail pages now make room for backdrops, posters, videos, metadata, collection membership, watched state, and box-set contents."
+      },
+      {
+        "title": "Plugin-centered platform",
+        "body": "Manage metadata sources, receivers, import sources, digital media sources, plugin packages, health checks, and background plugin jobs from the admin area."
+      },
+      {
+        "title": "Admin, RBAC, API and MCP",
+        "body": "DiscVault 26 adds invite-only flows, owner/admin tools, Basic and Advanced RBAC, role simulation, audit views, API access, and MCP-ready integrations."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Screenshots",
+    "heading": "New library experience",
+    "temporary": "Temporary product captures — final iPhone, iPad, and desktop images will replace these before launch.",
+    "mobileLibrary": "DiscVault 26 library",
+    "mobileAdd": "Add movie",
+    "mobileDetail": "Detail page",
+    "desktopLibrary": "DiscVault 26 library",
+    "desktopDetail": "Detail page"
+  },
+  "trust": {
+    "eyebrow": "Privacy",
+    "heading": "Works standalone",
+    "body": "The app runs completely on its own — no server required. Manage your collection right on your device without the DiscVault backend.",
+    "noTrackingTitle": "No tracking",
+    "noTrackingBody": "No analytics, advertising, or third-party tracking.",
+    "controlTitle": "Your data, your choice",
+    "controlBody": "Keep your library on your device or on a DiscVault server you administer."
+  },
+  "comparison": {
+    "eyebrow": "Choose your route",
+    "heading": "Built for people with real shelves, real stacks, and real editions.",
+    "route": "Route",
+    "bestFor": "Best for",
+    "setup": "Setup",
+    "iosBest": "The app runs completely on its own — no server required. Manage your collection right on your device without the DiscVault backend.",
+    "iosSetup": "Install the TestFlight beta. No server required.",
+    "selfBest": "DiscVault 26 can be installed and used today. It brings a new desktop-first library, richer detail pages, PostgreSQL foundations, plugins, migration tools, and better admin controls for collectors who want to keep their physical media catalog self-hosted.",
+    "selfSetup": "Follow the current installation guide in DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Community",
+    "heading": "Need help or want to follow updates?",
+    "discord": "Join Discord",
+    "issues": "Report an Issue",
+    "support": "Support Thread",
+    "finalTitle": "DiscVault. Built for collectors."
+  },
+  "footer": {
+    "tagline": "DiscVault. Built for collectors.",
+    "source": "Source on GitHub",
+    "legacy": "Legacy migration",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support Thread"
+  }
+}

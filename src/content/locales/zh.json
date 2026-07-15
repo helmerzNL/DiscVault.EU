@@ -1,0 +1,123 @@
+{
+  "locale": "zh",
+  "languageName": "中文",
+  "seo": {
+    "title": "DiscVault。为收藏者而构建。",
+    "description": "使用摄像头扫描条码，然后自动获取电影元数据和封面图。 应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。"
+  },
+  "nav": {
+    "product": "功能",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "隐私",
+    "docs": "Docs",
+    "menu": "菜单",
+    "language": "语言"
+  },
+  "hero": {
+    "eyebrow": "DiscVault。为收藏者而构建。",
+    "title": "DiscVault 26 已到来。",
+    "accent": "为下一层收藏架而构建。",
+    "lead": "为真实货架、真实堆叠和真实版本的收藏者而构建。",
+    "testflight": "TestFlight",
+    "selfHosted": "安装 v26"
+  },
+  "routes": {
+    "eyebrow": "安装",
+    "heading": "为 iOS 原生打造",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "可独立运行",
+      "body": "应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。",
+      "points": [
+        "使用摄像头扫描条码，然后自动获取电影元数据和封面图。",
+        "按标题、类型或导演搜索，并按格式筛选。"
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "DiscVault 26 已到来。",
+      "body": "DiscVault 26 现在可以安装和使用。它带来新的 desktop-first library、更丰富的 detail pages、PostgreSQL foundation、plugins、migration tools，以及适合 self-hosted 实体媒体 catalog 的更好 admin controls。",
+      "points": [
+        "DiscVault 26 增加仅邀请流程、所有者/管理员工具、Basic 和 Advanced RBAC、角色模拟、审计视图、API 访问以及 MCP 就绪集成。",
+        "可在管理区域管理元数据来源、接收器、导入来源、数字媒体来源、插件包、健康检查和后台任务。"
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "功能",
+    "heading": "为真实货架、真实堆叠和真实版本的收藏者而构建。",
+    "items": [
+      {
+        "title": "扫描并增强",
+        "body": "使用摄像头扫描条码，然后自动获取电影元数据和封面图。"
+      },
+      {
+        "title": "筛选和搜索",
+        "body": "按标题、类型或导演搜索，并按格式筛选。"
+      },
+      {
+        "title": "全新的资料库体验",
+        "body": "浏览海报，切换到列表或详情视图，按格式筛选，打开容器和套装，并在大型收藏中保持界面快速响应。"
+      },
+      {
+        "title": "更丰富的电影和容器页面",
+        "body": "详情页现在可显示背景图、海报、视频、元数据、收藏归属、观看状态和套装内容。"
+      },
+      {
+        "title": "以插件为中心的平台",
+        "body": "可在管理区域管理元数据来源、接收器、导入来源、数字媒体来源、插件包、健康检查和后台任务。"
+      },
+      {
+        "title": "管理、RBAC、API 和 MCP",
+        "body": "DiscVault 26 增加仅邀请流程、所有者/管理员工具、Basic 和 Advanced RBAC、角色模拟、审计视图、API 访问以及 MCP 就绪集成。"
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "截图",
+    "heading": "全新的资料库体验",
+    "temporary": "临时产品截图 — 上线前将替换为最终的 iPhone、iPad 和 desktop 图像。",
+    "mobileLibrary": "DiscVault 26 资料库",
+    "mobileAdd": "添加电影",
+    "mobileDetail": "详情页",
+    "desktopLibrary": "DiscVault 26 资料库",
+    "desktopDetail": "详情页"
+  },
+  "trust": {
+    "eyebrow": "隐私",
+    "heading": "可独立运行",
+    "body": "应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。",
+    "noTrackingTitle": "无跟踪",
+    "noTrackingBody": "没有分析、广告或第三方跟踪。",
+    "controlTitle": "你的数据，你的选择",
+    "controlBody": "将你的资料库保存在设备上，或保存在你自行管理的 DiscVault 服务器上。"
+  },
+  "comparison": {
+    "eyebrow": "选择你的路线",
+    "heading": "为真实货架、真实堆叠和真实版本的收藏者而构建。",
+    "route": "路线",
+    "bestFor": "最适合",
+    "setup": "设置",
+    "iosBest": "应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。",
+    "iosSetup": "安装 TestFlight 测试版。无需服务器。",
+    "selfBest": "DiscVault 26 现在可以安装和使用。它带来新的 desktop-first library、更丰富的 detail pages、PostgreSQL foundation、plugins、migration tools，以及适合 self-hosted 实体媒体 catalog 的更好 admin controls。",
+    "selfSetup": "按照 DiscVault Docs 中的最新安装指南进行操作。"
+  },
+  "community": {
+    "eyebrow": "社区",
+    "heading": "需要帮助或想关注更新?",
+    "discord": "加入 Discord",
+    "issues": "报告 Issue",
+    "support": "支持帖",
+    "finalTitle": "DiscVault。为收藏者而构建。"
+  },
+  "footer": {
+    "tagline": "DiscVault。为收藏者而构建。",
+    "source": "GitHub 上的源代码",
+    "legacy": "旧版迁移",
+    "privacy": "隐私",
+    "terms": "条款",
+    "support": "支持帖"
+  }
+}

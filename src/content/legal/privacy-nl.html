@@ -1,0 +1,234 @@
+<p class="legal-langswitch">
+          <a href="./privacy.html">English</a>
+          <span aria-current="true">Nederlands</span>
+        </p>
+
+        <p class="legal-meta">
+          <strong>Laatst bijgewerkt:</strong> 8 juli 2026 &nbsp;·&nbsp;
+          <strong>Van toepassing op:</strong> DiscVault voor iOS en iPadOS
+        </p>
+
+        <div class="legal-callout">
+          <p>
+            <strong>Kort gezegd:</strong> de DiscVault-app draait geen analytics,
+            advertenties of tracking van derden. Er is geen account nodig. Je
+            collectie staat op je toestel, wordt eventueel gesynchroniseerd met je
+            eigen self-hosted DiscVault-server, en film-/serie-metadata wordt bij
+            onze MovieVault-dienst opgehaald met alleen een barcode of zoekterm. Als
+            je metadata van een titel corrigeert of toevoegt, kunnen die film-/serie-
+            gegevens worden teruggegeven aan MovieVault om de gedeelde catalogus te
+            verbeteren — maar nooit je collectie, je eigendomsgegevens of je identiteit.
+          </p>
+        </div>
+
+        <h2>1. Wie we zijn</h2>
+        <p>
+          Deze app wordt uitgegeven door <strong>DiscVault — VaultStack</strong>
+          (“DiscVault”, “wij”, “ons”). Voor privacyvragen of -verzoeken kun je
+          contact opnemen via
+          <a href="mailto:privacy@discvault.eu">privacy@discvault.eu</a>. In de zin
+          van de Algemene Verordening Gegevensbescherming (AVG) is DiscVault —
+          VaultStack de verwerkingsverantwoordelijke voor de beperkte verwerking
+          beschreven in paragraaf 5 (metadata-lookups). Voor gegevens op een server
+          die je zelf host, ben <em>jij</em> de verwerkingsverantwoordelijke.
+        </p>
+
+        <h2>2. Onze privacyprincipes</h2>
+        <ul>
+          <li><strong>Lokaal eerst.</strong> De app werkt volledig offline en bewaart je collectie op je toestel.</li>
+          <li><strong>Geen account nodig.</strong> Je kunt de app gebruiken zonder je aan te melden of ons persoonsgegevens te geven.</li>
+          <li><strong>Geen tracking.</strong> Geen analytics-SDK's, geen advertenties, geen profilering, geen databrokers.</li>
+          <li><strong>Jij beheert je server.</strong> Elke synchronisatie gaat naar een DiscVault-server die je zelf host en beheert.</li>
+          <li><strong>Dataminimalisatie.</strong> De enige online dienst die de app aanroept (MovieVault) ontvangt alleen wat nodig is om te bepalen “welke schijf is dit?”.</li>
+        </ul>
+
+        <h2>3. Gegevens op je toestel</h2>
+        <p>
+          Het volgende wordt lokaal op je iPhone of iPad bewaard en wordt niet naar
+          ons verzonden:
+        </p>
+        <ul>
+          <li><strong>Je collectie</strong> — de titels, box sets, schijfformaten, watchlist en kijkgeschiedenis die je toevoegt.</li>
+          <li><strong>App-voorkeuren</strong> — weergave- en filterinstellingen die je kiest.</li>
+          <li>
+            <strong>Inloggegevens in de iOS-sleutelhanger (Keychain)</strong> — als je
+            een server koppelt: je DiscVault-server-URL en het aanmeldtoken (sessietoken)
+            dat je krijgt nadat je je met je passkey hebt aangemeld;
+            en voor metadata-lookups: een sleutel die alleen op dit toestel bestaat,
+            een willekeurig gegenereerde toestel-identificatie en een servicetoken
+            (zie paragraaf 5). Deze worden veilig opgeslagen en zijn alleen
+            toegankelijk voor de app op dit toestel. Je passkey zelf wordt beheerd door
+            iOS (of je wachtwoordmanager) en wordt nooit door de app opgeslagen of gezien.
+          </li>
+        </ul>
+        <p>
+          Als je de app verwijdert, worden deze lokale gegevens van je toestel
+          gewist. Lokale gegevens komen mee in de standaard versleutelde
+          iCloud-/iTunes-back-up van je toestel als je die hebt ingeschakeld; die
+          back-up beheer jij, niet wij.
+        </p>
+
+        <h2>4. Gegevens die je naar je eigen DiscVault-server stuurt</h2>
+        <p>
+          DiscVault is ontworpen om self-hosted te draaien. Als je het adres van je
+          server invoert en je aanmeldt met je DiscVault-passkey — dezelfde passkey die
+          je hebt aangemaakt bij het installeren van DiscVault — kan de app je collectie,
+          watchlist en kijkgeschiedenis synchroniseren met je
+          <em>eigen</em> DiscVault-server. In dat geval:
+        </p>
+        <ul>
+          <li>Het aanmelden gebeurt met je passkey (WebAuthn). De passkey-ceremonie draait in een beveiligde systeembrowsersessie; de app ontvangt alleen een sessietoken, nooit een wachtwoord of de privésleutel van je passkey.</li>
+          <li>Gaan de gegevens rechtstreeks van de app naar de server die jij beheert — ze passeren ons niet.</li>
+          <li>Ben jij (of de beheerder van je server) verantwoordelijk voor die server, de beveiliging en de gegevens.</li>
+          <li>Is het koppelen van een server volledig optioneel; de app werkt ook zonder.</li>
+        </ul>
+        <p>
+          Let op: in de huidige App Store-release van de app is de serverkoppeling nog
+          niet ingeschakeld; die komt in een toekomstige update. Wanneer dat zo is, werkt
+          het precies zoals in deze sectie beschreven.
+        </p>
+
+        <h2>5. Metadata-lookups (MovieVault)</h2>
+        <p>
+          Om automatisch de naam, het jaar, de omslag en het format van een titel in
+          te vullen, neemt de app contact op met onze MovieVault-metadatadienst op
+          <code>https://movies.vaultstack.eu</code> via HTTPS. Dit is de enige online
+          dienst waarop de app zelf steunt. Hij wordt gebruikt als je een barcode
+          scant, als je bij het handmatig toevoegen op naam zoekt, en — zoals hieronder
+          beschreven — wanneer metadataverbeteringen worden teruggegeven aan de gedeelde
+          catalogus.
+        </p>
+        <p><strong>Wat naar MovieVault wordt gestuurd:</strong></p>
+        <ul>
+          <li>Het <strong>barcodenummer</strong> dat je scant, of de <strong>zoektekst</strong> die je typt.</li>
+          <li>Een <strong>willekeurig gegenereerde toestel-identificatie</strong> en een publieke sleutel die de app bij het eerste gebruik aanmaakt, plus de app-naam, app-versie en het platform (“ios”). Hiermee kan de dienst een token afgeven en misbruik beperken.</li>
+        </ul>
+        <p><strong>Wat <em>niet</em> naar MovieVault wordt gestuurd:</strong></p>
+        <ul>
+          <li>Je naam, e-mailadres, Apple ID of enig account.</li>
+          <li>Je collectie, watchlist of kijkgeschiedenis.</li>
+          <li>Het adres, de passkey of het sessietoken van je DiscVault-server.</li>
+          <li>De advertentie-identificatie, locatie of contacten van je toestel.</li>
+        </ul>
+        <p>
+          De toestel-identificatie is willekeurig en niet afgeleid van jou of je
+          hardware; hij is niet gekoppeld aan je echte identiteit. MovieVault
+          verzamelt metadata uit openbare bronnen aan de serverkant en geeft één
+          resultaat terug aan de app. Grondslag onder de AVG: ons
+          <strong>gerechtvaardigd belang</strong> (art. 6, lid 1, sub f) om de
+          door jou gevraagde lookup-functie te leveren en de dienst tegen misbruik te
+          beschermen. We gebruiken deze gegevens niet voor advertenties of
+          profilering.
+        </p>
+        <p>
+          Voor het App Store-privacylabel van Apple wordt deze willekeurige
+          device-identifier vermeld als een “Device ID” die uitsluitend wordt verzameld
+          om de opzoekdienst te laten werken en te beveiligen tegen misbruik. Deze is niet
+          gekoppeld aan je identiteit en wordt niet gebruikt voor tracking.
+        </p>
+
+        <h3>Bijdragen aan metadataverbeteringen</h3>
+        <p>
+          MovieVault onderhoudt ook een gedeelde catalogus die in de loop van de tijd
+          beter wordt. Wanneer je de metadata van een titel corrigeert of handmatig een
+          titel met metadata toevoegt (bijvoorbeeld de naam, het jaar, de omslag, de cast
+          of het schijfformaat), kunnen die film-/serie-gegevens worden teruggegeven aan
+          MovieVault, zodat toekomstige zoekopdrachten en lookups — voor jou én voor andere
+          gebruikers — rijkere, nauwkeurigere resultaten opleveren.
+        </p>
+        <ul>
+          <li>Alleen de <strong>metadatagegevens over de titel</strong> worden bijgedragen. Je eigendomsgegevens, je collectielijst, je watchlist, je kijkgeschiedenis en je identiteit worden nooit verzonden.</li>
+          <li>Bijdragen zijn alleen gekoppeld aan dezelfde <strong>willekeurig gegenereerde toestel-identificatie</strong> als hierboven beschreven, uitsluitend om misbruik te voorkomen — niet aan je naam, account of enig persoonlijk profiel.</li>
+          <li>Bijgedragen metadata wordt onderdeel van de gedeelde catalogus en kan bij toekomstige lookups aan andere DiscVault-gebruikers worden getoond.</li>
+          <li>Op dit moment wordt deze bijdrage verzorgd door je <strong>DiscVault-server</strong> wanneer je daar correcties maakt. Een toekomstige versie van de app kan ook aanbieden om metadata rechtstreeks bij te dragen; als dat wordt toegevoegd, worden deze verklaring en de instellingen in de app daarop aangepast.</li>
+        </ul>
+        <p>
+          Grondslag onder de AVG: ons <strong>gerechtvaardigd belang</strong> (art. 6,
+          lid 1, sub f) bij het onderhouden en verbeteren van een gedeelde
+          metadatacatalogus. Omdat bijdragen niet aan je identiteit zijn gekoppeld, zijn
+          ze normaal gesproken niet naar jou te herleiden; neem contact op via
+          <a href="mailto:privacy@discvault.eu">privacy@discvault.eu</a> als je vragen hebt
+          over een specifieke bijdrage.
+        </p>
+
+        <h2>6. Camera</h2>
+        <p>
+          De app vraagt alleen cameratoegang zodat je bij het toevoegen van een titel
+          de barcode van een schijf kunt scannen. Het scannen gebeurt op je toestel
+          met de ingebouwde VisionKit-scanner van Apple. Camerabeelden worden op het
+          toestel verwerkt en worden niet door de app opgeslagen of verzonden; alleen
+          het gedecodeerde barcodenummer wordt gebruikt voor een lookup (zie
+          paragraaf 5). Je kunt cameratoegang weigeren en titels in plaats daarvan
+          handmatig toevoegen.
+        </p>
+
+        <h2>7. Wat we niet doen</h2>
+        <ul>
+          <li>We verzamelen geen analytics of gebruiksstatistieken.</li>
+          <li>We tonen geen advertenties en gebruiken geen advertentie-identificaties.</li>
+          <li>We gebruiken geen tracking- of profilerings-SDK's van derden.</li>
+          <li>We verkopen of delen je gegevens niet met databrokers.</li>
+          <li>We benaderen je locatie, contacten, foto's of microfoon niet.</li>
+        </ul>
+
+        <h2>8. Bewaartermijn</h2>
+        <p>
+          Wij bewaren geen kopie van je collectie. Lokale gegevens blijven op je
+          toestel totdat je ze verwijdert of de app deïnstalleert. Gegevens op een
+          self-hosted server worden bewaard volgens de instellingen van die server.
+          MovieVault bewaart alleen de minimale operationele gegevens (zoals het
+          toesteltoken en kortstondige verzoeklogs) die nodig zijn om de lookup-dienst
+          te laten draaien en te beveiligen, niet langer dan noodzakelijk.
+        </p>
+
+        <h2>9. Internationale doorgifte</h2>
+        <p>
+          MovieVault wordt gehost in de Europese Unie. Als je de app buiten de EU
+          gebruikt, wordt je barcode-/zoekverzoek verwerkt op EU-infrastructuur.
+        </p>
+
+        <h2>10. Privacy van kinderen</h2>
+        <p>
+          DiscVault is een verzameltool voor een algemeen publiek en is niet gericht
+          op kinderen. De app verzamelt niet bewust persoonsgegevens van kinderen.
+        </p>
+
+        <h2>11. Je rechten</h2>
+        <p>
+          Omdat de app lokaal-eerst werkt en wij bijna geen persoonsgegevens over je
+          bewaren, heb je de meeste controle direct zelf: verwijder titels in de app
+          of deïnstalleer de app om alles lokaal te wissen. Waar de AVG van toepassing
+          is, heb je recht op inzage, rectificatie, wissing, beperking, bezwaar en
+          overdraagbaarheid van eventuele gegevens die wij verwerken. Om deze rechten
+          uit te oefenen, of om je MovieVault-toestelkoppeling te resetten, neem je
+          contact op via <a href="mailto:privacy@discvault.eu">privacy@discvault.eu</a>.
+          Je hebt ook het recht een klacht in te dienen bij je lokale
+          toezichthouder (in Nederland de Autoriteit Persoonsgegevens).
+        </p>
+
+        <h2>12. Metadata en omslagen van derden</h2>
+        <p>
+          Titels, beschrijvingen en omslagen die MovieVault teruggeeft, zijn afkomstig
+          uit openbare bronnen van derden en behoren toe aan hun respectieve
+          eigenaren. Ze worden aangeboden om je te helpen schijven die je bezit te
+          catalogiseren en worden uitsluitend ter identificatie getoond.
+        </p>
+
+        <h2>13. Wijzigingen in deze verklaring</h2>
+        <p>
+          We kunnen deze verklaring aanpassen naarmate de app evolueert. Belangrijke
+          wijzigingen worden op deze pagina weergegeven met een nieuwe datum “Laatst
+          bijgewerkt”. Als je de app blijft gebruiken na een update, aanvaard je de
+          herziene verklaring.
+        </p>
+
+        <h2>14. Contact</h2>
+        <p>
+          DiscVault — VaultStack<br />
+          <a href="mailto:privacy@discvault.eu">privacy@discvault.eu</a>
+        </p>
+
+        <p class="legal-links">
+          <a href="./terms-nl.html">Algemene voorwaarden</a>
+          <a href="./index.html">Terug naar DiscVault</a>
+        </p>

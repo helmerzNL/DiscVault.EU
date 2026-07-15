@@ -1,0 +1,123 @@
+{
+  "locale": "el",
+  "languageName": "Ελληνικά",
+  "seo": {
+    "title": "DiscVault. Σχεδιασμένο για συλλέκτες.",
+    "description": "Σαρώστε barcodes και πάρτε αυτόματα metadata και εξώφυλλα. Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault."
+  },
+  "nav": {
+    "product": "Λειτουργίες",
+    "ios": "iPhone & iPad",
+    "selfHosted": "Self-hosted",
+    "privacy": "Απόρρητο",
+    "docs": "Docs",
+    "menu": "Μενού",
+    "language": "Γλώσσες"
+  },
+  "hero": {
+    "eyebrow": "DiscVault. Σχεδιασμένο για συλλέκτες.",
+    "title": "Το DiscVault 26 είναι εδώ.",
+    "accent": "Φτιαγμένο για το επόμενο ράφι.",
+    "lead": "Φτιαγμένο για ανθρώπους με πραγματικά ράφια, στοίβες και εκδόσεις.",
+    "testflight": "TestFlight",
+    "selfHosted": "Εγκατάσταση v26"
+  },
+  "routes": {
+    "eyebrow": "Εγκατάσταση",
+    "heading": "Φτιαγμένη native για iOS",
+    "ios": {
+      "label": "iPhone & iPad",
+      "title": "Λειτουργεί αυτόνομα",
+      "body": "Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault.",
+      "points": [
+        "Σαρώστε barcodes και πάρτε αυτόματα metadata και εξώφυλλα.",
+        "Αναζητήστε ανά τίτλο, είδος ή σκηνοθέτη και φιλτράρετε ανά format."
+      ]
+    },
+    "selfHosted": {
+      "label": "Self-hosted",
+      "title": "Το DiscVault 26 είναι εδώ.",
+      "body": "Το DiscVault 26 μπορεί πλέον να εγκατασταθεί και να χρησιμοποιηθεί. Φέρνει νέο desktop-first library, πλουσιότερα detail pages, PostgreSQL foundation, plugins, migration tools και καλύτερα admin controls για self-hosted catalog φυσικών media.",
+      "points": [
+        "Το DiscVault 26 προσθέτει ροές μόνο με πρόσκληση, εργαλεία owner/admin, Basic και Advanced RBAC, προσομοίωση ρόλων, audit views, πρόσβαση API και MCP-ready integrations.",
+        "Διαχειριστείτε πηγές metadata, receivers, πηγές εισαγωγής, ψηφιακές πηγές πολυμέσων, πακέτα plugins, health checks και εργασίες παρασκηνίου από την περιοχή admin."
+      ]
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Λειτουργίες",
+    "heading": "Φτιαγμένο για ανθρώπους με πραγματικά ράφια, στοίβες και εκδόσεις.",
+    "items": [
+      {
+        "title": "Σάρωση και εμπλουτισμός",
+        "body": "Σαρώστε barcodes και πάρτε αυτόματα metadata και εξώφυλλα."
+      },
+      {
+        "title": "Φίλτρα και αναζήτηση",
+        "body": "Αναζητήστε ανά τίτλο, είδος ή σκηνοθέτη και φιλτράρετε ανά format."
+      },
+      {
+        "title": "Νέα εμπειρία βιβλιοθήκης",
+        "body": "Περιηγηθείτε σε αφίσες, αλλάξτε σε λίστα ή λεπτομέρειες, φιλτράρετε ανά μορφή, ανοίξτε containers και box sets και κρατήστε το interface γρήγορο σε μεγάλες συλλογές."
+      },
+      {
+        "title": "Πλουσιότερες σελίδες ταινιών και containers",
+        "body": "Οι σελίδες λεπτομερειών έχουν χώρο για backdrops, αφίσες, βίντεο, metadata, συμμετοχή σε συλλογές, κατάσταση παρακολούθησης και περιεχόμενα box set."
+      },
+      {
+        "title": "Πλατφόρμα με επίκεντρο τα plugins",
+        "body": "Διαχειριστείτε πηγές metadata, receivers, πηγές εισαγωγής, ψηφιακές πηγές πολυμέσων, πακέτα plugins, health checks και εργασίες παρασκηνίου από την περιοχή admin."
+      },
+      {
+        "title": "Admin, RBAC, API και MCP",
+        "body": "Το DiscVault 26 προσθέτει ροές μόνο με πρόσκληση, εργαλεία owner/admin, Basic και Advanced RBAC, προσομοίωση ρόλων, audit views, πρόσβαση API και MCP-ready integrations."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Στιγμιότυπα",
+    "heading": "Νέα εμπειρία βιβλιοθήκης",
+    "temporary": "Προσωρινές λήψεις προϊόντος — οι τελικές εικόνες για iPhone, iPad και desktop θα τις αντικαταστήσουν πριν την κυκλοφορία.",
+    "mobileLibrary": "Βιβλιοθήκη DiscVault 26",
+    "mobileAdd": "Προσθήκη ταινίας",
+    "mobileDetail": "Σελίδα λεπτομερειών",
+    "desktopLibrary": "Βιβλιοθήκη DiscVault 26",
+    "desktopDetail": "Σελίδα λεπτομερειών"
+  },
+  "trust": {
+    "eyebrow": "Απόρρητο",
+    "heading": "Λειτουργεί αυτόνομα",
+    "body": "Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault.",
+    "noTrackingTitle": "Χωρίς παρακολούθηση",
+    "noTrackingBody": "Καμία ανάλυση, διαφήμιση ή παρακολούθηση από τρίτους.",
+    "controlTitle": "Τα δεδομένα σας, η επιλογή σας",
+    "controlBody": "Κρατήστε τη βιβλιοθήκη σας στη συσκευή σας ή σε έναν διακομιστή DiscVault που διαχειρίζεστε εσείς."
+  },
+  "comparison": {
+    "eyebrow": "Επιλέξτε τη διαδρομή σας",
+    "heading": "Φτιαγμένο για ανθρώπους με πραγματικά ράφια, στοίβες και εκδόσεις.",
+    "route": "Διαδρομή",
+    "bestFor": "Ιδανικό για",
+    "setup": "Ρύθμιση",
+    "iosBest": "Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault.",
+    "iosSetup": "Εγκαταστήστε το beta του TestFlight. Δεν απαιτείται server.",
+    "selfBest": "Το DiscVault 26 μπορεί πλέον να εγκατασταθεί και να χρησιμοποιηθεί. Φέρνει νέο desktop-first library, πλουσιότερα detail pages, PostgreSQL foundation, plugins, migration tools και καλύτερα admin controls για self-hosted catalog φυσικών media.",
+    "selfSetup": "Ακολουθήστε τον τρέχοντα οδηγό εγκατάστασης στο DiscVault Docs."
+  },
+  "community": {
+    "eyebrow": "Κοινότητα",
+    "heading": "Χρειάζεστε βοήθεια ή θέλετε να παρακολουθείτε ενημερώσεις;",
+    "discord": "Συμμετοχή στο Discord",
+    "issues": "Αναφορά Issue",
+    "support": "Νήμα υποστήριξης",
+    "finalTitle": "DiscVault. Σχεδιασμένο για συλλέκτες."
+  },
+  "footer": {
+    "tagline": "DiscVault. Σχεδιασμένο για συλλέκτες.",
+    "source": "Πηγαίος κώδικας στο GitHub",
+    "legacy": "Μετάβαση από παλαιότερη έκδοση",
+    "privacy": "Απόρρητο",
+    "terms": "Όροι",
+    "support": "Νήμα υποστήριξης"
+  }
+}

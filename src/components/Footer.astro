@@ -1,0 +1,40 @@
+---
+import type { MarketingContent } from '../content/types';
+import type { Locale } from '../content/locales';
+import { DOCS_URL, GITHUB_URL, SUPPORT_URL } from '../config';
+
+interface Props {
+  content: MarketingContent;
+  locale: Locale;
+}
+
+const { content, locale } = Astro.props;
+const privacyPath = locale === 'nl' ? '/privacy-nl.html' : '/privacy.html';
+const termsPath = locale === 'nl' ? '/terms-nl.html' : '/terms.html';
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img
+        src="/brand/discvault-logo-transparent.png"
+        width="40"
+        height="40"
+        alt=""
+      />
+      <div>
+        <strong>DiscVault</strong>
+        <p>{content.footer.tagline}</p>
+      </div>
+    </div>
+    <nav aria-label={content.footer.tagline}>
+      <a href={DOCS_URL}>Docs</a>
+      <a href={GITHUB_URL}>{content.footer.source}</a>
+      <a href={SUPPORT_URL}>{content.footer.support}</a>
+      <a href="/legacy/">{content.footer.legacy}</a>
+      <a href={privacyPath}>{content.footer.privacy}</a>
+      <a href={termsPath}>{content.footer.terms}</a>
+    </nav>
+    <p class="footer-note">{content.trust.noTrackingBody}</p>
+  </div>
+</footer>
