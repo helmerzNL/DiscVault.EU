@@ -41,8 +41,8 @@ await Promise.all(critical.map(requireFile));
 await access(path.join('dist', 'brand', 'discvault-logo-transparent.png'));
 
 for (const [name, phrase] of Object.entries({
-  'privacy.html': 'the DiscVault app does not run any analytics',
-  'privacy-nl.html': 'de DiscVault-app draait geen analytics',
+  'privacy.html': 'DiscVault for iOS, iPadOS, and Android',
+  'privacy-nl.html': 'DiscVault voor iOS, iPadOS en Android',
   'terms.html': 'Acceptance of these terms',
   'terms-nl.html': 'Aanvaarding van deze voorwaarden',
 })) {
@@ -68,6 +68,52 @@ for (const [name, phrase] of Object.entries({
     throw new Error(
       `${name} has ${alternates} hreflang links instead of ${legalAlternates.length}`,
     );
+  }
+}
+
+const privacyClaims = {
+  'privacy.html': [
+    'DiscVault for iOS, iPadOS, and Android',
+    'the apps are standalone and do not upload or sync your collection, watchlist, or watch history',
+    'stores it only on your device in secure platform storage',
+    'sends lookup requests directly to TMDB over HTTPS',
+    'Your TMDB API key or any direct TMDB request.',
+    'Your collection, watchlist, or watch history.',
+  ],
+  'privacy-nl.html': [
+    'DiscVault voor iOS, iPadOS en Android',
+    'de apps zijn standalone en uploaden of synchroniseren je collectie, watchlist of kijkgeschiedenis niet',
+    'bewaart de app die alleen op je toestel in beveiligde platformopslag',
+    'verstuurt de app lookup-verzoeken rechtstreeks via HTTPS naar TMDB',
+    'Je TMDB API-key of enig rechtstreeks TMDB-verzoek.',
+    'Je collectie, watchlist of kijkgeschiedenis.',
+  ],
+};
+for (const [name, claims] of Object.entries(privacyClaims)) {
+  const built = await requireFile(name);
+  const normalized = built
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  for (const claim of claims) {
+    if (!normalized.includes(claim)) {
+      throw new Error(`${name} is missing required privacy claim: ${claim}`);
+    }
+  }
+  if (!built.includes('href="https://www.themoviedb.org/privacy-policy"')) {
+    throw new Error(`${name} is missing TMDB's official privacy policy link`);
+  }
+  for (const obsoleteClaim of [
+    'DiscVault — VaultStack',
+    'self-hosted DiscVault',
+    'Contributing metadata improvements',
+    'Bijdragen aan metadataverbeteringen',
+  ]) {
+    if (normalized.includes(obsoleteClaim)) {
+      throw new Error(
+        `${name} still contains obsolete claim: ${obsoleteClaim}`,
+      );
+    }
   }
 }
 
