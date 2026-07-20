@@ -19,12 +19,14 @@
     "title": "DiscVault 26 is er.",
     "accent": "Gebouwd voor de volgende plank.",
     "lead": "Gebouwd voor mensen met echte planken, echte stapels en echte edities.",
-    "testflight": "TestFlight",
+    "appStore": "Download in de App Store",
+    "androidBeta": "Android-bèta aanvragen",
     "selfHosted": "Installeer v26"
   },
   "routes": {
     "eyebrow": "Installatie",
-    "heading": "Native gebouwd voor iOS",
+    "heading": "Start self-hosted. Voeg mobiel toe wanneer het past.",
+    "mobileRoadmap": "De iOS- en Android-apps werken nu zelfstandig. Koppeling met een self-hosted DiscVault-installatie staat gepland voor een later stadium.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Werkt zelfstandig",
@@ -99,9 +101,10 @@
     "bestFor": "Het beste voor",
     "setup": "Installatie",
     "iosBest": "De app draait volledig op zichzelf — geen server nodig. Beheer je collectie direct op je apparaat zonder de DiscVault-backend.",
-    "iosSetup": "Installeer de TestFlight-bèta. Geen server nodig.",
+    "iosSetup": "Download in de App Store. Geen server nodig.",
     "selfBest": "DiscVault 26 kan nu geïnstalleerd en gebruikt worden. Het brengt een nieuwe desktop-first bibliotheek, rijkere detailpagina's, PostgreSQL-fundamenten, plugins, migratietools en betere admin-controls voor verzamelaars die hun fysieke media self-hosted willen catalogiseren.",
-    "selfSetup": "Volg de actuele installatiehandleiding in DiscVault Docs."
+    "selfSetup": "Volg de actuele installatiehandleiding in DiscVault Docs.",
+    "androidSetup": "Vraag toegang aan via Discord. Goedgekeurde testers installeren via Google Play."
   },
   "community": {
     "eyebrow": "Community",

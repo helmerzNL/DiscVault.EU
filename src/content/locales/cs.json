@@ -19,12 +19,14 @@
     "title": "DiscVault 26 je tady.",
     "accent": "Postavený pro další polici.",
     "lead": "Postavené pro skutečné police, hromádky a edice.",
-    "testflight": "TestFlight",
+    "appStore": "Stáhnout v App Storu",
+    "androidBeta": "Požádat o přístup k Android beta verzi",
     "selfHosted": "Instalovat v26"
   },
   "routes": {
     "eyebrow": "Instalace",
-    "heading": "Vytvořeno nativně pro iOS",
+    "heading": "Začněte self-hosted. Mobilní aplikace přidejte podle potřeby.",
+    "mobileRoadmap": "Aplikace pro iOS a Android dnes fungují samostatně. Jejich propojení se self-hostovanou instalací DiscVault je plánováno na později.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Funguje samostatně",
@@ -99,9 +101,10 @@
     "bestFor": "Nejlepší pro",
     "setup": "Nastavení",
     "iosBest": "Aplikace běží zcela samostatně — bez serveru. Spravujte svou sbírku přímo v zařízení bez backendu DiscVault.",
-    "iosSetup": "Nainstalujte beta verzi TestFlight. Server není potřeba.",
+    "iosSetup": "Stáhněte z App Storu. Server není potřeba.",
     "selfBest": "DiscVault 26 lze nyní nainstalovat a používat. Přináší novou desktop-first library, bohatší detail pages, PostgreSQL foundation, plugins, migration tools a lepší admin controls pro self-hosted catalog fyzických médií.",
-    "selfSetup": "Postupujte podle aktuálního instalačního návodu v DiscVault Docs."
+    "selfSetup": "Postupujte podle aktuálního instalačního návodu v DiscVault Docs.",
+    "androidSetup": "Požádejte o přístup přes Discord. Schválení testeři instalují přes Google Play."
   },
   "community": {
     "eyebrow": "Komunita",

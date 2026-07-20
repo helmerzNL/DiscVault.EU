@@ -19,12 +19,14 @@
     "title": "Το DiscVault 26 είναι εδώ.",
     "accent": "Φτιαγμένο για το επόμενο ράφι.",
     "lead": "Φτιαγμένο για ανθρώπους με πραγματικά ράφια, στοίβες και εκδόσεις.",
-    "testflight": "TestFlight",
+    "appStore": "Λήψη από το App Store",
+    "androidBeta": "Αίτημα πρόσβασης στην beta για Android",
     "selfHosted": "Εγκατάσταση v26"
   },
   "routes": {
     "eyebrow": "Εγκατάσταση",
-    "heading": "Φτιαγμένη native για iOS",
+    "heading": "Ξεκινήστε με self-hosted. Προσθέστε κινητό όταν σας ταιριάζει.",
+    "mobileRoadmap": "Οι εφαρμογές iOS και Android λειτουργούν σήμερα αυτόνομα. Η σύνδεσή τους με μια αυτοφιλοξενούμενη εγκατάσταση DiscVault έχει προγραμματιστεί για αργότερα.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Λειτουργεί αυτόνομα",
@@ -99,9 +101,10 @@
     "bestFor": "Ιδανικό για",
     "setup": "Ρύθμιση",
     "iosBest": "Η εφαρμογή λειτουργεί εντελώς μόνη της — χωρίς server. Διαχειριστείτε τη συλλογή σας απευθείας στη συσκευή σας, χωρίς το backend του DiscVault.",
-    "iosSetup": "Εγκαταστήστε το beta του TestFlight. Δεν απαιτείται server.",
+    "iosSetup": "Κατεβάστε από το App Store. Δεν απαιτείται διακομιστής.",
     "selfBest": "Το DiscVault 26 μπορεί πλέον να εγκατασταθεί και να χρησιμοποιηθεί. Φέρνει νέο desktop-first library, πλουσιότερα detail pages, PostgreSQL foundation, plugins, migration tools και καλύτερα admin controls για self-hosted catalog φυσικών media.",
-    "selfSetup": "Ακολουθήστε τον τρέχοντα οδηγό εγκατάστασης στο DiscVault Docs."
+    "selfSetup": "Ακολουθήστε τον τρέχοντα οδηγό εγκατάστασης στο DiscVault Docs.",
+    "androidSetup": "Ζητήστε πρόσβαση μέσω Discord. Οι εγκεκριμένοι δοκιμαστές εγκαθιστούν μέσω Google Play."
   },
   "community": {
     "eyebrow": "Κοινότητα",

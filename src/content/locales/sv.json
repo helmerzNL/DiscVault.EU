@@ -19,12 +19,14 @@
     "title": "DiscVault 26 ar har.",
     "accent": "Byggd for nasta hylla.",
     "lead": "Byggt för personer med riktiga hyllor, riktiga staplar och riktiga utgåvor.",
-    "testflight": "TestFlight",
+    "appStore": "Hämta i App Store",
+    "androidBeta": "Begär åtkomst till Android-betan",
     "selfHosted": "Installera v26"
   },
   "routes": {
     "eyebrow": "Installation",
-    "heading": "Byggd inbyggt för iOS",
+    "heading": "Börja självhostat. Lägg till mobilen när det passar.",
+    "mobileRoadmap": "iOS- och Android-apparna fungerar fristående i dag. Anslutning till en självhostad DiscVault-installation planeras till ett senare skede.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Fungerar fristående",
@@ -99,9 +101,10 @@
     "bestFor": "Bäst för",
     "setup": "Installation",
     "iosBest": "Appen fungerar helt på egen hand — ingen server krävs. Hantera din samling direkt på enheten utan DiscVault-backend.",
-    "iosSetup": "Installera TestFlight-betan. Ingen server krävs.",
+    "iosSetup": "Hämta i App Store. Ingen server krävs.",
     "selfBest": "DiscVault 26 kan installeras och användas nu. Den ger en ny desktop-first-biblioteksvy, rikare detaljsidor, PostgreSQL-grund, plugins, migreringsverktyg och bättre admin-kontroller för self-hosted fysiska mediesamlingar.",
-    "selfSetup": "Följ den aktuella installationsguiden i DiscVault Docs."
+    "selfSetup": "Följ den aktuella installationsguiden i DiscVault Docs.",
+    "androidSetup": "Begär åtkomst via Discord. Godkända testare installerar via Google Play."
   },
   "community": {
     "eyebrow": "Gemenskap",

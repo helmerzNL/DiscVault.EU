@@ -31,12 +31,14 @@ export interface MarketingContent {
     title: string;
     accent: string;
     lead: string;
-    testflight: string;
+    appStore: string;
+    androidBeta: string;
     selfHosted: string;
   };
   routes: {
     eyebrow: string;
     heading: string;
+    mobileRoadmap: string;
     ios: ProductRoute;
     selfHosted: ProductRoute;
   };
@@ -71,6 +73,7 @@ export interface MarketingContent {
     setup: string;
     iosBest: string;
     iosSetup: string;
+    androidSetup: string;
     selfBest: string;
     selfSetup: string;
   };

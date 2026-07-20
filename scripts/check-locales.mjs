@@ -74,6 +74,10 @@ const locales = Object.fromEntries(
 
 const referenceShape = shape(locales.en);
 const localizedCopyPaths = [
+  'hero.appStore',
+  'hero.androidBeta',
+  'routes.heading',
+  'routes.mobileRoadmap',
   'trust.noTrackingTitle',
   'trust.noTrackingBody',
   'trust.controlTitle',
@@ -81,6 +85,7 @@ const localizedCopyPaths = [
   'comparison.eyebrow',
   'comparison.bestFor',
   'comparison.iosSetup',
+  'comparison.androidSetup',
   'comparison.selfSetup',
   'footer.legacy',
   'footer.terms',

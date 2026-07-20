@@ -19,12 +19,14 @@
     "title": "Megérkezett a DiscVault 26.",
     "accent": "A következő polcra építve.",
     "lead": "Valódi polcokhoz, kupacokhoz és kiadásokhoz készült.",
-    "testflight": "TestFlight",
+    "appStore": "Letöltés az App Store-ból",
+    "androidBeta": "Hozzáférés kérése az Android bétához",
     "selfHosted": "v26 telepítése"
   },
   "routes": {
     "eyebrow": "Telepítés",
-    "heading": "Natívan iOS-re építve",
+    "heading": "Kezdje saját üzemeltetéssel. Adja hozzá a mobilalkalmazást, amikor megfelelő.",
+    "mobileRoadmap": "Az iOS- és Android-alkalmazások jelenleg önállóan működnek. A saját üzemeltetésű DiscVault-példányhoz való csatlakoztatásuk egy későbbi szakaszra van tervezve.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Önállóan működik",
@@ -99,9 +101,10 @@
     "bestFor": "Legjobb választás",
     "setup": "Beállítás",
     "iosBest": "Az alkalmazás teljesen önállóan fut — nincs szükség szerverre. Kezelje gyűjteményét közvetlenül a készülékén, DiscVault backend nélkül.",
-    "iosSetup": "Telepítse a TestFlight betát. Szerver nem szükséges.",
+    "iosSetup": "Töltsd le az App Store-ból. Nincs szükség szerverre.",
     "selfBest": "A DiscVault 26 már telepíthető és használható. Új desktop-first library, gazdagabb detail pages, PostgreSQL foundation, plugins, migration tools és jobb admin controls érkezik self-hosted fizikai média cataloghoz.",
-    "selfSetup": "Kövesse a DiscVault Docs aktuális telepítési útmutatóját."
+    "selfSetup": "Kövesse a DiscVault Docs aktuális telepítési útmutatóját.",
+    "androidSetup": "Kérj hozzáférést a Discordon. A jóváhagyott tesztelők a Google Playen keresztül telepítenek."
   },
   "community": {
     "eyebrow": "Közösség",
