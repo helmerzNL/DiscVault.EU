@@ -259,6 +259,10 @@ h3 {
   right: 0;
   display: grid;
   width: min(18rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 5.5rem);
+  max-height: calc(100dvh - 5.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 0.5rem;
   border: 1px solid var(--dv-border);
   border-radius: 0.9rem;
@@ -279,6 +283,20 @@ h3 {
 
 .mobile-menu nav a:hover {
   background: var(--dv-surface-3);
+}
+
+.mobile-menu nav .mobile-menu-primary {
+  justify-content: center;
+  border: 1px solid var(--dv-accent);
+  margin-bottom: 0.25rem;
+  background: var(--dv-accent);
+  color: var(--dv-accent-on);
+}
+
+.mobile-menu nav .mobile-menu-primary:hover {
+  border-color: var(--dv-accent-hover);
+  background: var(--dv-accent-hover);
+  color: var(--dv-accent-on);
 }
 
 .button {
@@ -331,14 +349,42 @@ h3 {
   text-transform: uppercase;
 }
 
-.dual-actions {
+.button-secondary {
+  border-color: var(--dv-border);
+  background: var(--dv-surface-1);
+  box-shadow: none;
+  color: var(--dv-text);
+}
+
+.button-secondary .button-kicker {
+  color: var(--dv-accent-bright);
+}
+
+.button-secondary:hover .button-kicker {
+  color: var(--dv-accent-on);
+}
+
+.platform-actions {
   display: grid;
-  max-width: 38rem;
+  max-width: 44rem;
   gap: 0.75rem;
 }
 
-.dual-actions .button {
+.platform-actions .button {
   display: grid;
+}
+
+.platform-primary {
+  min-height: 68px;
+}
+
+.platform-secondary-actions {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.testflight-link {
+  margin-top: 0.75rem;
 }
 
 .hero {
@@ -362,6 +408,7 @@ h3 {
 .hero-mark {
   position: relative;
   width: min(78vw, 30rem);
+  max-width: 100%;
   margin-inline: auto;
   isolation: isolate;
 }
@@ -418,6 +465,18 @@ h3 {
   flex-direction: column;
 }
 
+.route-card-featured {
+  min-height: 0;
+  border-color: var(--dv-accent);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--dv-accent) 13%, transparent),
+      transparent 58%
+    ),
+    var(--dv-surface-1);
+}
+
 .route-card::before {
   position: absolute;
   top: 0;
@@ -465,6 +524,21 @@ h3 {
   padding: 0;
   margin: 1rem 0 2rem;
   list-style: none;
+}
+
+.route-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.route-actions {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.route-actions .text-link {
+  justify-content: center;
 }
 
 .route-card li {
@@ -688,7 +762,7 @@ tbody tr:last-child > * {
   margin-inline: auto;
 }
 
-.final-cta .dual-actions {
+.final-cta .platform-actions {
   margin-inline: auto;
 }
 
@@ -829,7 +903,7 @@ tbody tr:last-child > * {
 }
 
 @media (min-width: 40rem) {
-  .dual-actions {
+  .platform-secondary-actions {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -860,6 +934,14 @@ tbody tr:last-child > * {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .route-card-featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+    align-items: start;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
   .capability-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -869,7 +951,7 @@ tbody tr:last-child > * {
   }
 }
 
-@media (min-width: 68rem) {
+@media (min-width: 78rem) {
   .desktop-nav,
   .header-actions {
     display: flex;

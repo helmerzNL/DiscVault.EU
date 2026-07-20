@@ -19,12 +19,14 @@
     "title": "DiscVault 26 已到来。",
     "accent": "为下一层收藏架而构建。",
     "lead": "为真实货架、真实堆叠和真实版本的收藏者而构建。",
-    "testflight": "TestFlight",
+    "appStore": "从 App Store 下载",
+    "androidBeta": "申请 Android 测试版资格",
     "selfHosted": "安装 v26"
   },
   "routes": {
     "eyebrow": "安装",
-    "heading": "为 iOS 原生打造",
+    "heading": "从自托管开始，按需添加移动端。",
+    "mobileRoadmap": "iOS 和 Android 应用目前可独立运行。未来计划支持连接到自托管的 DiscVault 实例。",
     "ios": {
       "label": "iPhone & iPad",
       "title": "可独立运行",
@@ -99,9 +101,10 @@
     "bestFor": "最适合",
     "setup": "设置",
     "iosBest": "应用完全独立运行 — 无需服务器。无需 DiscVault backend，即可直接在设备上管理你的收藏。",
-    "iosSetup": "安装 TestFlight 测试版。无需服务器。",
+    "iosSetup": "从 App Store 下载，无需服务器。",
     "selfBest": "DiscVault 26 现在可以安装和使用。它带来新的 desktop-first library、更丰富的 detail pages、PostgreSQL foundation、plugins、migration tools，以及适合 self-hosted 实体媒体 catalog 的更好 admin controls。",
-    "selfSetup": "按照 DiscVault Docs 中的最新安装指南进行操作。"
+    "selfSetup": "按照 DiscVault Docs 中的最新安装指南进行操作。",
+    "androidSetup": "通过 Discord 申请资格。获批的测试用户可通过 Google Play 安装。"
   },
   "community": {
     "eyebrow": "社区",

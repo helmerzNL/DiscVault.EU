@@ -1,7 +1,12 @@
 ---
 import type { Locale } from '../content/locales';
 import type { MarketingContent } from '../content/types';
-import { DOCS_URL, TESTFLIGHT_URL } from '../config';
+import {
+  ANDROID_BETA_SIGNUP_URL,
+  APP_STORE_URL,
+  DOCS_URL,
+  TESTFLIGHT_URL,
+} from '../config';
 import LocaleSwitcher from './LocaleSwitcher.astro';
 
 interface Props {
@@ -28,8 +33,9 @@ const homeAnchor = (anchor: string) => `${homePath}${anchor}`;
 
     <nav class="desktop-nav" aria-label={content.nav.product}>
       <a href={homeAnchor('#product')}>{content.nav.product}</a>
-      <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
       <a href={homeAnchor('#self-hosted')}>{content.nav.selfHosted}</a>
+      <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
+      <a href={homeAnchor('#android')}>Android</a>
       <a href={homeAnchor('#privacy')}>{content.nav.privacy}</a>
       <a href={DOCS_URL}>{content.nav.docs}</a>
     </nav>
@@ -37,18 +43,24 @@ const homeAnchor = (anchor: string) => `${homePath}${anchor}`;
     <div class="header-tools">
       <LocaleSwitcher locale={locale} label={content.nav.language} />
       <div class="header-actions">
-        <a class="button button-compact" href={TESTFLIGHT_URL}>TestFlight</a>
-        <a class="button button-compact" href={DOCS_URL}>Self-hosted</a>
+        <a class="button button-compact" href={DOCS_URL}>
+          {content.hero.selfHosted}
+        </a>
       </div>
       <details class="mobile-menu">
         <summary>{content.nav.menu}</summary>
         <nav aria-label={content.nav.menu}>
+          <a class="mobile-menu-primary" href={DOCS_URL}>
+            {content.hero.selfHosted}
+          </a>
           <a href={homeAnchor('#product')}>{content.nav.product}</a>
-          <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
           <a href={homeAnchor('#self-hosted')}>{content.nav.selfHosted}</a>
+          <a href={homeAnchor('#ios')}>{content.nav.ios}</a>
+          <a href={homeAnchor('#android')}>Android</a>
           <a href={homeAnchor('#privacy')}>{content.nav.privacy}</a>
-          <a href={DOCS_URL}>{content.nav.docs}</a>
-          <a href={TESTFLIGHT_URL}>TestFlight</a>
+          <a href={APP_STORE_URL}>App Store</a>
+          <a href={ANDROID_BETA_SIGNUP_URL}>{content.hero.androidBeta}</a>
+          <a href={TESTFLIGHT_URL}>TestFlight beta</a>
         </nav>
       </details>
     </div>

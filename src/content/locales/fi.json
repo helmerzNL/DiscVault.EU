@@ -19,12 +19,14 @@
     "title": "DiscVault 26 on taalla.",
     "accent": "Rakennettu seuraavalle hyllylle.",
     "lead": "Rakennettu ihmisille, joilla on oikeita hyllyjä, pinoja ja julkaisuja.",
-    "testflight": "TestFlight",
+    "appStore": "Lataa App Storesta",
+    "androidBeta": "Pyydä pääsyä Android-betaan",
     "selfHosted": "Asenna v26"
   },
   "routes": {
     "eyebrow": "Asennus",
-    "heading": "Rakennettu natiivisti iOS:lle",
+    "heading": "Aloita itse ylläpidetystä. Lisää mobiili, kun se sopii.",
+    "mobileRoadmap": "iOS- ja Android-sovellukset toimivat tällä hetkellä itsenäisesti. Niiden yhdistäminen itse ylläpidettyyn DiscVault-asennukseen on suunnitteilla myöhemmin.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Toimii itsenäisesti",
@@ -99,9 +101,10 @@
     "bestFor": "Parhaiten sopii",
     "setup": "Käyttöönotto",
     "iosBest": "Sovellus toimii täysin itsenäisesti — palvelinta ei tarvita. Hallitse kokoelmaasi suoraan laitteellasi ilman DiscVault-backendia.",
-    "iosSetup": "Asenna TestFlight-beta. Palvelinta ei tarvita.",
+    "iosSetup": "Lataa App Storesta. Palvelinta ei tarvita.",
     "selfBest": "DiscVault 26 voidaan asentaa ja ottaa kayttoon nyt. Se tuo uuden desktop-first-kirjaston, rikkaammat tietosivut, PostgreSQL-pohjan, pluginit, migraatiotyokalut ja paremmat admin-kontrollit self-hosted fyysisille kokoelmille.",
-    "selfSetup": "Seuraa DiscVault Docsin ajantasaista asennusohjetta."
+    "selfSetup": "Seuraa DiscVault Docsin ajantasaista asennusohjetta.",
+    "androidSetup": "Pyydä pääsyä Discordissa. Hyväksytyt testaajat asentavat Google Playn kautta."
   },
   "community": {
     "eyebrow": "Yhteisö",

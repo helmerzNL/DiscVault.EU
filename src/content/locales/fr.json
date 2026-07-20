@@ -19,12 +19,14 @@
     "title": "DiscVault 26 est la.",
     "accent": "Concu pour la prochaine etagere.",
     "lead": "Conçu pour les personnes avec de vraies étagères, de vraies piles et de vraies éditions.",
-    "testflight": "TestFlight",
+    "appStore": "Télécharger sur l’App Store",
+    "androidBeta": "Demander l’accès à la bêta Android",
     "selfHosted": "Installer v26"
   },
   "routes": {
     "eyebrow": "Installation",
-    "heading": "Conçue nativement pour iOS",
+    "heading": "Commencez en auto-hébergement. Ajoutez le mobile selon vos besoins.",
+    "mobileRoadmap": "Les applications iOS et Android fonctionnent actuellement de manière autonome. Leur connexion à une installation DiscVault auto-hébergée est prévue ultérieurement.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Fonctionne de façon autonome",
@@ -99,9 +101,10 @@
     "bestFor": "Idéal pour",
     "setup": "Configuration",
     "iosBest": "L'app fonctionne entièrement seule — aucun serveur requis. Gérez votre collection directement sur votre appareil, sans le backend DiscVault.",
-    "iosSetup": "Installez la bêta TestFlight. Aucun serveur requis.",
+    "iosSetup": "Téléchargez-la sur l’App Store. Aucun serveur requis.",
     "selfBest": "DiscVault 26 peut etre installe et utilise aujourd'hui. Il apporte une bibliotheque desktop-first, des pages detail enrichies, une base PostgreSQL, des plugins, des outils de migration et de meilleurs controles admin pour cataloguer des medias physiques en self-hosted.",
-    "selfSetup": "Suivez le guide d'installation actuel dans DiscVault Docs."
+    "selfSetup": "Suivez le guide d'installation actuel dans DiscVault Docs.",
+    "androidSetup": "Demandez l’accès sur Discord. Les testeurs acceptés installent via Google Play."
   },
   "community": {
     "eyebrow": "Communauté",

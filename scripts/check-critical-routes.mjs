@@ -22,8 +22,28 @@ const locales = [
   'uk',
   'zh',
 ];
+const appStore = 'https://apps.apple.com/app/discvault/id6788772918';
 const testflight = 'https://testflight.apple.com/join/6bJetcyy';
+const discord = 'https://discord.gg/zdc88VB8mJ';
+const obsoleteDiscord = 'https://discord.gg/6fEXZV8A';
 const docs = 'https://docs.discvault.eu/';
+
+function countButtonLinks(
+  html,
+  href,
+  requiredClasses = ['button'],
+  excludedClasses = [],
+) {
+  return [...html.matchAll(/<a\b[^>]*>/g)].filter((match) => {
+    const tag = match[0];
+    const classes = tag.match(/\bclass="([^"]*)"/)?.[1].split(/\s+/) ?? [];
+    return (
+      tag.includes(`href="${href}"`) &&
+      requiredClasses.every((className) => classes.includes(className)) &&
+      excludedClasses.every((className) => !classes.includes(className))
+    );
+  }).length;
+}
 
 async function requireFile(relativePath) {
   await access(path.join('dist', relativePath));
@@ -152,8 +172,11 @@ for (const [file, locale, canonical] of marketingPages) {
   const checks = [
     `<html lang="${locale}"`,
     `rel="canonical" href="${canonical}"`,
+    appStore,
     testflight,
+    discord,
     docs,
+    'id="android"',
     'hreflang="x-default"',
     'application/ld+json',
   ];
@@ -161,6 +184,60 @@ for (const [file, locale, canonical] of marketingPages) {
     if (!html.includes(check)) {
       throw new Error(`${file} is missing ${check}`);
     }
+  }
+  const selfHostedButtons = countButtonLinks(
+    html,
+    docs,
+    ['button'],
+    ['button-secondary'],
+  );
+  const selfHostedHeaderButtons = countButtonLinks(html, docs, [
+    'button',
+    'button-compact',
+  ]);
+  const selfHostedMobileButtons = countButtonLinks(html, docs, [
+    'mobile-menu-primary',
+  ]);
+  const appStoreButtons = countButtonLinks(html, appStore, [
+    'button',
+    'button-secondary',
+  ]);
+  const androidButtons = countButtonLinks(html, discord, [
+    'button',
+    'button-secondary',
+  ]);
+  const selfHostedIndex = html.indexOf('id="self-hosted"');
+  const iosIndex = html.indexOf('id="ios"');
+  const androidIndex = html.indexOf('id="android"');
+  const selfHostedArticleStart = html.lastIndexOf('<article', selfHostedIndex);
+  const selfHostedArticleEnd = html.indexOf('>', selfHostedArticleStart);
+  const selfHostedArticle = html.slice(
+    selfHostedArticleStart,
+    selfHostedArticleEnd + 1,
+  );
+  if (
+    selfHostedButtons < 4 ||
+    selfHostedHeaderButtons !== 1 ||
+    selfHostedMobileButtons !== 1 ||
+    appStoreButtons < 3 ||
+    androidButtons < 3 ||
+    selfHostedIndex < 0 ||
+    !(selfHostedIndex < iosIndex && iosIndex < androidIndex) ||
+    !selfHostedArticle.includes('route-card-featured')
+  ) {
+    throw new Error(
+      `${file} must render Self-hosted first as the featured primary route, with App Store and Android as secondary routes`,
+    );
+  }
+  if (
+    countButtonLinks(html, appStore, ['button'], ['button-secondary']) > 0 ||
+    countButtonLinks(html, discord, ['button'], ['button-secondary']) > 0 ||
+    countButtonLinks(html, testflight) > 0 ||
+    html.includes(obsoleteDiscord)
+  ) {
+    throw new Error(
+      `${file} promotes a mobile route as primary or retains the obsolete Discord invite`,
+    );
   }
   const alternates = [...html.matchAll(/rel="alternate" hreflang=/g)].length;
   if (alternates !== 21) {

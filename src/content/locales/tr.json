@@ -19,12 +19,14 @@
     "title": "DiscVault 26 burada.",
     "accent": "Bir sonraki raf için geliştirildi.",
     "lead": "Gerçek rafları, yığınları ve sürümleri olan kişiler için geliştirildi.",
-    "testflight": "TestFlight",
+    "appStore": "App Store'dan indirin",
+    "androidBeta": "Android beta erişimi isteyin",
     "selfHosted": "v26 kur"
   },
   "routes": {
     "eyebrow": "Kurulum",
-    "heading": "iOS için yerel olarak geliştirildi",
+    "heading": "Self-hosted ile başlayın. Uygun olduğunda mobili ekleyin.",
+    "mobileRoadmap": "iOS ve Android uygulamaları şu anda bağımsız çalışır. Kendi sunucunuzda barındırılan bir DiscVault kurulumuna bağlanmaları ileride planlanmaktadır.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Bağımsız çalışır",
@@ -99,9 +101,10 @@
     "bestFor": "En uygun",
     "setup": "Kurulum",
     "iosBest": "Uygulama tamamen kendi başına çalışır — sunucu gerekmez. Koleksiyonunuzu DiscVault backend olmadan doğrudan cihazınızda yönetin.",
-    "iosSetup": "TestFlight beta sürümünü kurun. Sunucu gerekmez.",
+    "iosSetup": "App Store'dan indirin. Sunucu gerekmez.",
     "selfBest": "DiscVault 26 artık kurulup kullanılabilir. Yeni desktop-first library, daha zengin detail pages, PostgreSQL foundation, plugins, migration tools ve self-hosted fiziksel medya catalog için daha iyi admin controls getirir.",
-    "selfSetup": "DiscVault Docs'taki güncel kurulum kılavuzunu izleyin."
+    "selfSetup": "DiscVault Docs'taki güncel kurulum kılavuzunu izleyin.",
+    "androidSetup": "Discord üzerinden erişim isteyin. Onaylanan test kullanıcıları Google Play üzerinden yükler."
   },
   "community": {
     "eyebrow": "Topluluk",

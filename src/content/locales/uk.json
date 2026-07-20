@@ -19,12 +19,14 @@
     "title": "DiscVault 26 вже тут.",
     "accent": "Створено для наступної полиці.",
     "lead": "Створено для людей із реальними полицями, стосами та виданнями.",
-    "testflight": "TestFlight",
+    "appStore": "Завантажити з App Store",
+    "androidBeta": "Подати заявку на доступ до бета-версії Android",
     "selfHosted": "Встановити v26"
   },
   "routes": {
     "eyebrow": "Встановити",
-    "heading": "Створено нативно для iOS",
+    "heading": "Почніть із self-hosted. Додайте мобільні застосунки, коли це буде доречно.",
+    "mobileRoadmap": "Зараз застосунки для iOS та Android працюють автономно. Підключення до самостійно розгорнутого DiscVault заплановано на пізніший етап.",
     "ios": {
       "label": "iPhone & iPad",
       "title": "Працює автономно",
@@ -99,9 +101,10 @@
     "bestFor": "Найкраще для",
     "setup": "Налаштування",
     "iosBest": "Застосунок працює повністю самостійно — сервер не потрібен. Керуйте колекцією прямо на пристрої без backend DiscVault.",
-    "iosSetup": "Встановіть бета-версію TestFlight. Сервер не потрібен.",
+    "iosSetup": "Завантажте з App Store. Сервер не потрібен.",
     "selfBest": "DiscVault 26 вже можна встановити й використовувати. Він додає нову desktop-first library, багатші detail pages, PostgreSQL foundation, plugins, migration tools і кращі admin controls для self-hosted catalog фізичних медіа.",
-    "selfSetup": "Дотримуйтеся актуального посібника з встановлення в DiscVault Docs."
+    "selfSetup": "Дотримуйтеся актуального посібника з встановлення в DiscVault Docs.",
+    "androidSetup": "Подайте заявку через Discord. Схвалені тестувальники встановлюють через Google Play."
   },
   "community": {
     "eyebrow": "Спільнота",

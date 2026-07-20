@@ -19,12 +19,14 @@
     "title": "DiscVault 26 が登場しました。",
     "accent": "次の棚のために構築。",
     "lead": "実際の棚、実際の山、実際のエディションを持つコレクターのために作られています。",
-    "testflight": "TestFlight",
+    "appStore": "App Store からダウンロード",
+    "androidBeta": "Android ベータ版へのアクセスを申請",
     "selfHosted": "v26 をインストール"
   },
   "routes": {
     "eyebrow": "インストール",
-    "heading": "iOS 向けにネイティブ設計",
+    "heading": "まずはセルフホストから。必要に応じてモバイルを追加。",
+    "mobileRoadmap": "iOSおよびAndroidアプリは現在スタンドアロンで動作します。セルフホスト版DiscVaultとの連携は今後の段階で予定しています。",
     "ios": {
       "label": "iPhone & iPad",
       "title": "単体で動作",
@@ -99,9 +101,10 @@
     "bestFor": "おすすめの用途",
     "setup": "セットアップ",
     "iosBest": "アプリは完全に単体で動作し、サーバーは不要です。DiscVault backend なしで、デバイス上でコレクションを管理できます。",
-    "iosSetup": "TestFlight ベータ版をインストールしてください。サーバーは不要です。",
+    "iosSetup": "App Store からダウンロードできます。サーバーは不要です。",
     "selfBest": "DiscVault 26 は今すぐインストールして利用できます。新しい desktop-first library、より詳しい detail pages、PostgreSQL foundation、plugins、migration tools、そして self-hosted の物理メディア catalog 向け admin controls を備えています。",
-    "selfSetup": "DiscVault Docs の最新のインストールガイドに従ってください。"
+    "selfSetup": "DiscVault Docs の最新のインストールガイドに従ってください。",
+    "androidSetup": "Discord でアクセスを申請してください。承認されたテスターは Google Play からインストールできます。"
   },
   "community": {
     "eyebrow": "コミュニティ",
